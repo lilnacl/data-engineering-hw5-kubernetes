@@ -29,7 +29,7 @@ def main():
     def run(args, log, input=None):
         print(' '.join(map(str, args)), flush=True)
         result = subprocess.run(args, input=input, text=True, capture_output=True, env=env)
-        (root / 'evidence' / log).write_text(result.stdout + result.stderr)
+        (root / 'evidence' / log).write_text((result.stdout + result.stderr).replace(str(root) + os.sep, ''))
         if result.returncode:
             raise SystemExit(f'Command failed; see evidence/{log}')
 

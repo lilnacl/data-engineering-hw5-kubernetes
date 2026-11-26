@@ -24,9 +24,10 @@ def command(args, label=None, document=None, check=True):
     result = subprocess.run(KUBE + args, input=document, text=True, capture_output=True, timeout=45)
     with (EVIDENCE / 'commands.jsonl').open('a') as f:
         f.write(json.dumps({'utc': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
-                            'args': KUBE + args, 'returncode': result.returncode}) + '\n')
+                            'args': [str(a).replace(str(ROOT) + os.sep, '') for a in KUBE + args],
+                            'returncode': result.returncode}) + '\n')
     if label:
-        (EVIDENCE / label).write_text(result.stdout + result.stderr)
+        (EVIDENCE / label).write_text((result.stdout + result.stderr).replace(str(ROOT) + os.sep, ''))
     if check and result.returncode:
         raise RuntimeError(f'{args}: {result.stderr}')
     return result

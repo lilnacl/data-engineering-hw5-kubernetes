@@ -17,6 +17,6 @@ Creating cluster "de-hw5" ...
 Set kubectl context to "kind-de-hw5"
 You can now use your cluster with:
 
-kubectl cluster-info --context kind-de-hw5 --kubeconfig /Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/work/kubeconfig
+kubectl cluster-info --context kind-de-hw5 --kubeconfig work/kubeconfig
 
 Have a nice day! 👋
