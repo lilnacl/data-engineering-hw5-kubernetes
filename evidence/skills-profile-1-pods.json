@@ -1,0 +1,187 @@
+[
+  {
+    "apiVersion": "v1",
+    "kind": "Pod",
+    "metadata": {
+      "creationTimestamp": "2026-11-26T09:50:19Z",
+      "generateName": "skills-profile-1-",
+      "labels": {
+        "batch.kubernetes.io/controller-uid": "85e64a50-9361-4efe-be66-27263b79c385",
+        "batch.kubernetes.io/job-name": "skills-profile-1",
+        "controller-uid": "85e64a50-9361-4efe-be66-27263b79c385",
+        "job-name": "skills-profile-1"
+      },
+      "name": "skills-profile-1-qtxvr",
+      "namespace": "hw5",
+      "ownerReferences": [
+        {
+          "apiVersion": "batch/v1",
+          "blockOwnerDeletion": true,
+          "controller": true,
+          "kind": "Job",
+          "name": "skills-profile-1",
+          "uid": "85e64a50-9361-4efe-be66-27263b79c385"
+        }
+      ],
+      "resourceVersion": "968",
+      "uid": "e06ad116-12b5-4ce2-8ddb-69e4aa5cf526"
+    },
+    "spec": {
+      "automountServiceAccountToken": false,
+      "containers": [
+        {
+          "args": [
+            "--prefix",
+            "runs/profile-1"
+          ],
+          "env": [
+            {
+              "name": "S3_ENDPOINT",
+              "value": "http://rustfs.hw5.svc.cluster.local:9000"
+            },
+            {
+              "name": "S3_ACCESS_KEY",
+              "valueFrom": {
+                "secretKeyRef": {
+                  "key": "access",
+                  "name": "s3-credentials"
+                }
+              }
+            },
+            {
+              "name": "S3_SECRET_KEY",
+              "valueFrom": {
+                "secretKeyRef": {
+                  "key": "secret",
+                  "name": "s3-credentials"
+                }
+              }
+            }
+          ],
+          "image": "de-hw5-skills:1",
+          "imagePullPolicy": "Never",
+          "name": "skills",
+          "resources": {
+            "limits": {
+              "cpu": "1",
+              "memory": "256Mi"
+            },
+            "requests": {
+              "cpu": "250m",
+              "memory": "64Mi"
+            }
+          },
+          "securityContext": {
+            "allowPrivilegeEscalation": false,
+            "capabilities": {
+              "drop": [
+                "ALL"
+              ]
+            },
+            "readOnlyRootFilesystem": true
+          },
+          "terminationMessagePath": "/dev/termination-log",
+          "terminationMessagePolicy": "File"
+        }
+      ],
+      "dnsPolicy": "ClusterFirst",
+      "enableServiceLinks": true,
+      "nodeName": "de-hw5-control-plane",
+      "preemptionPolicy": "PreemptLowerPriority",
+      "priority": 0,
+      "restartPolicy": "Never",
+      "schedulerName": "default-scheduler",
+      "securityContext": {},
+      "serviceAccount": "default",
+      "serviceAccountName": "default",
+      "terminationGracePeriodSeconds": 30,
+      "tolerations": [
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/not-ready",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        },
+        {
+          "effect": "NoExecute",
+          "key": "node.kubernetes.io/unreachable",
+          "operator": "Exists",
+          "tolerationSeconds": 300
+        }
+      ]
+    },
+    "status": {
+      "conditions": [
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-26T09:50:25Z",
+          "status": "False",
+          "type": "PodReadyToStartContainers"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-26T09:50:19Z",
+          "reason": "PodCompleted",
+          "status": "True",
+          "type": "Initialized"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-26T09:50:24Z",
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "Ready"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-26T09:50:24Z",
+          "reason": "PodCompleted",
+          "status": "False",
+          "type": "ContainersReady"
+        },
+        {
+          "lastProbeTime": null,
+          "lastTransitionTime": "2026-11-26T09:50:19Z",
+          "status": "True",
+          "type": "PodScheduled"
+        }
+      ],
+      "containerStatuses": [
+        {
+          "containerID": "containerd://c90abde9e0e35fb57dfba6922587603dec39c71b8d1fa0bf014254899b0ad8f4",
+          "image": "docker.io/library/de-hw5-skills:1",
+          "imageID": "sha256:b3e4ad83d0b3e804d484c09dd79276c41aefec5c1b48f7f795e5f02aac289dc7",
+          "lastState": {},
+          "name": "skills",
+          "ready": false,
+          "restartCount": 0,
+          "started": false,
+          "state": {
+            "terminated": {
+              "containerID": "containerd://c90abde9e0e35fb57dfba6922587603dec39c71b8d1fa0bf014254899b0ad8f4",
+              "exitCode": 0,
+              "finishedAt": "2026-11-26T09:50:23Z",
+              "reason": "Completed",
+              "startedAt": "2026-11-26T09:50:19Z"
+            }
+          }
+        }
+      ],
+      "hostIP": "172.22.0.2",
+      "hostIPs": [
+        {
+          "ip": "172.22.0.2"
+        }
+      ],
+      "phase": "Succeeded",
+      "podIP": "10.244.0.11",
+      "podIPs": [
+        {
+          "ip": "10.244.0.11"
+        }
+      ],
+      "qosClass": "Burstable",
+      "startTime": "2026-11-26T09:50:19Z"
+    }
+  }
+]

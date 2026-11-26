@@ -1,0 +1,7 @@
+841180	/data1
+841180	/data2
+841172	/data3
+841184	/data4
+total 20
+drwxr-xr-x 2 rustfs rustfs 12288 Nov 26 09:50 faec1e3e-9b9a-4fe8-8506-c46195dd27fd
+-rw-r--r-- 1 rustfs rustfs  5575 Nov 26 09:50 xl.meta

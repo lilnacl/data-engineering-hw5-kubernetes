@@ -1,0 +1,45 @@
+Name:             skills-cpu-wait-6mcbc
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             <none>
+Labels:           batch.kubernetes.io/controller-uid=ebd96d67-dc1c-46b2-ab33-ffebddec4a88
+                  batch.kubernetes.io/job-name=skills-cpu-wait
+                  controller-uid=ebd96d67-dc1c-46b2-ab33-ffebddec4a88
+                  job-name=skills-cpu-wait
+Annotations:      <none>
+Status:           Pending
+IP:               
+IPs:              <none>
+Controlled By:    Job/skills-cpu-wait
+Containers:
+  skills:
+    Image:      de-hw5-skills:1
+    Port:       <none>
+    Host Port:  <none>
+    Args:
+      --prefix
+      runs/cpu-wait
+    Limits:
+      cpu:     2
+      memory:  112Mi
+    Requests:
+      cpu:     2
+      memory:  64Mi
+    Environment:
+      S3_ENDPOINT:    http://rustfs.hw5.svc.cluster.local:9000
+      S3_ACCESS_KEY:  <set to the key 'access' in secret 's3-credentials'>  Optional: false
+      S3_SECRET_KEY:  <set to the key 'secret' in secret 's3-credentials'>  Optional: false
+    Mounts:           <none>
+Conditions:
+  Type           Status
+  PodScheduled   False 
+Volumes:         <none>
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  1s    default-scheduler  0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.

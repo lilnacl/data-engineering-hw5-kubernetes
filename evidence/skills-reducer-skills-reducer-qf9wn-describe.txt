@@ -1,0 +1,72 @@
+Name:             skills-reducer-qf9wn
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             de-hw5-control-plane/172.22.0.2
+Start Time:       Thu, 26 Nov 2026 12:50:55 +0300
+Labels:           batch.kubernetes.io/controller-uid=f5e93a86-b79b-4d40-96d5-f16a2cbf209b
+                  batch.kubernetes.io/job-name=skills-reducer
+                  controller-uid=f5e93a86-b79b-4d40-96d5-f16a2cbf209b
+                  job-name=skills-reducer
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.19
+IPs:
+  IP:           10.244.0.19
+Controlled By:  Job/skills-reducer
+Containers:
+  skills:
+    Container ID:  containerd://787e8f79314628bd15663cdf0eb7fc6cef7a64c7359b91d463b01568da5fe28a
+    Image:         de-hw5-skills:1
+    Image ID:      sha256:b3e4ad83d0b3e804d484c09dd79276c41aefec5c1b48f7f795e5f02aac289dc7
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      --prefix
+      runs/parallel
+      --mode
+      reduce
+      --parts
+      4
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Thu, 26 Nov 2026 12:50:55 +0300
+      Finished:     Thu, 26 Nov 2026 12:50:56 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  112Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment:
+      S3_ENDPOINT:    http://rustfs.hw5.svc.cluster.local:9000
+      S3_ACCESS_KEY:  <set to the key 'access' in secret 's3-credentials'>  Optional: false
+      S3_SECRET_KEY:  <set to the key 'secret' in secret 's3-credentials'>  Optional: false
+    Mounts:
+      /baseline from baseline (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  baseline:
+    Type:        ConfigMap (a volume populated by a ConfigMap)
+    Name:        hw3-baseline
+    Optional:    false
+QoS Class:       Burstable
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  3s    default-scheduler  Successfully assigned hw5/skills-reducer-qf9wn to de-hw5-control-plane
+  Normal  Pulled     3s    kubelet            Container image "de-hw5-skills:1" already present on machine
+  Normal  Created    3s    kubelet            Created container: skills
+  Normal  Started    3s    kubelet            Started container skills

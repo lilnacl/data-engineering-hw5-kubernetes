@@ -1,0 +1,14 @@
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata: {name: hw5-low}
+value: 100
+globalDefault: false
+description: Low priority in the isolated homework cluster
+---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata: {name: hw5-high}
+value: 1000
+globalDefault: false
+preemptionPolicy: PreemptLowerPriority
+description: High priority in the isolated homework cluster

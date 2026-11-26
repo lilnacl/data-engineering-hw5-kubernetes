@@ -1,0 +1,79 @@
+{
+  "profiles": [
+    {
+      "index": 0,
+      "source_key": "raw/it_vacancies_2024.csv",
+      "rows": 229388,
+      "selected_rows": 3123,
+      "chunks": 115,
+      "s3_bytes": 847619384,
+      "seconds": 4.098002335987985,
+      "memory": {
+        "rss_peak_bytes": 67555328,
+        "memory.peak": 87277568,
+        "memory.current": 80564224,
+        "memory.max": 268435456,
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+      }
+    },
+    {
+      "index": 0,
+      "source_key": "raw/it_vacancies_2024.csv",
+      "rows": 229388,
+      "selected_rows": 3123,
+      "chunks": 115,
+      "s3_bytes": 847619384,
+      "seconds": 3.969870210014051,
+      "memory": {
+        "rss_peak_bytes": 67702784,
+        "memory.peak": 58998784,
+        "memory.current": 52281344,
+        "memory.max": 268435456,
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+      }
+    },
+    {
+      "index": 0,
+      "source_key": "raw/it_vacancies_2024.csv",
+      "rows": 229388,
+      "selected_rows": 3123,
+      "chunks": 115,
+      "s3_bytes": 847619384,
+      "seconds": 3.954396209999686,
+      "memory": {
+        "rss_peak_bytes": 67715072,
+        "memory.peak": 58929152,
+        "memory.current": 52441088,
+        "memory.max": 268435456,
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+      }
+    }
+  ],
+  "peak_bytes": 87277568,
+  "margin": 1.25,
+  "round_up_mib": 16,
+  "chosen_limit_mib": 112,
+  "oom": {
+    "containerID": "containerd://0dd70e1e65bad24914e6d01147157150db1cf5f66567a0c895175b75ae0f2396",
+    "exitCode": 137,
+    "finishedAt": "2026-11-26T09:50:39Z",
+    "reason": "OOMKilled",
+    "startedAt": "2026-11-26T09:50:34Z"
+  },
+  "tuned": {
+    "index": 0,
+    "source_key": "raw/it_vacancies_2024.csv",
+    "rows": 229388,
+    "selected_rows": 3123,
+    "chunks": 115,
+    "s3_bytes": 847619384,
+    "seconds": 4.052961793000577,
+    "memory": {
+      "rss_peak_bytes": 67657728,
+      "memory.peak": 59092992,
+      "memory.current": 52772864,
+      "memory.max": 117440512,
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    }
+  }
+}

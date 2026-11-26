@@ -1,0 +1,63 @@
+Name:             skills-tuned-j5l7w
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             de-hw5-control-plane/172.22.0.2
+Start Time:       Thu, 26 Nov 2026 12:50:42 +0300
+Labels:           batch.kubernetes.io/controller-uid=7c26957f-b47d-4bc1-a141-72b2585f33b2
+                  batch.kubernetes.io/job-name=skills-tuned
+                  controller-uid=7c26957f-b47d-4bc1-a141-72b2585f33b2
+                  job-name=skills-tuned
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.14
+IPs:
+  IP:           10.244.0.14
+Controlled By:  Job/skills-tuned
+Containers:
+  skills:
+    Container ID:  containerd://16ada4daac45719dae239e83b34c658bdb2b8c29d296d280b57093c04fe90dae
+    Image:         de-hw5-skills:1
+    Image ID:      sha256:b3e4ad83d0b3e804d484c09dd79276c41aefec5c1b48f7f795e5f02aac289dc7
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      --prefix
+      runs/tuned
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Thu, 26 Nov 2026 12:50:42 +0300
+      Finished:     Thu, 26 Nov 2026 12:50:46 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  112Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment:
+      S3_ENDPOINT:    http://rustfs.hw5.svc.cluster.local:9000
+      S3_ACCESS_KEY:  <set to the key 'access' in secret 's3-credentials'>  Optional: false
+      S3_SECRET_KEY:  <set to the key 'secret' in secret 's3-credentials'>  Optional: false
+    Mounts:           <none>
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:                      <none>
+QoS Class:                    Burstable
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  7s    default-scheduler  Successfully assigned hw5/skills-tuned-j5l7w to de-hw5-control-plane
+  Normal  Pulled     7s    kubelet            Container image "de-hw5-skills:1" already present on machine
+  Normal  Created    7s    kubelet            Created container: skills
+  Normal  Started    7s    kubelet            Started container skills

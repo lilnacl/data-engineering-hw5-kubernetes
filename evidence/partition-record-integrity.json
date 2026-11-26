@@ -1,0 +1,11 @@
+{
+  "original": {
+    "rows": 229388,
+    "sha256_logical_records": "595b59fbd5528ac0eaadb0cdec1a6e4f1c2e40c9d08f5f85b2bb9aa3877b5e66"
+  },
+  "concatenated_parts": {
+    "rows": 229388,
+    "sha256_logical_records": "595b59fbd5528ac0eaadb0cdec1a6e4f1c2e40c9d08f5f85b2bb9aa3877b5e66"
+  },
+  "all_23_columns_and_record_order_preserved": true
+}

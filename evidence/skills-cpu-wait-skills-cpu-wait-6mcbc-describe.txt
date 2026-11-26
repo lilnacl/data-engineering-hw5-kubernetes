@@ -1,0 +1,64 @@
+Name:             skills-cpu-wait-6mcbc
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             de-hw5-control-plane/172.22.0.2
+Start Time:       Thu, 26 Nov 2026 12:51:02 +0300
+Labels:           batch.kubernetes.io/controller-uid=ebd96d67-dc1c-46b2-ab33-ffebddec4a88
+                  batch.kubernetes.io/job-name=skills-cpu-wait
+                  controller-uid=ebd96d67-dc1c-46b2-ab33-ffebddec4a88
+                  job-name=skills-cpu-wait
+Annotations:      <none>
+Status:           Succeeded
+IP:               10.244.0.21
+IPs:
+  IP:           10.244.0.21
+Controlled By:  Job/skills-cpu-wait
+Containers:
+  skills:
+    Container ID:  containerd://dc9ec568b9a3e0059372fb44d4bd1e87c27763593f1704d025d986a638be0551
+    Image:         de-hw5-skills:1
+    Image ID:      sha256:b3e4ad83d0b3e804d484c09dd79276c41aefec5c1b48f7f795e5f02aac289dc7
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      --prefix
+      runs/cpu-wait
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Thu, 26 Nov 2026 12:51:02 +0300
+      Finished:     Thu, 26 Nov 2026 12:51:07 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     2
+      memory:  112Mi
+    Requests:
+      cpu:     2
+      memory:  64Mi
+    Environment:
+      S3_ENDPOINT:    http://rustfs.hw5.svc.cluster.local:9000
+      S3_ACCESS_KEY:  <set to the key 'access' in secret 's3-credentials'>  Optional: false
+      S3_SECRET_KEY:  <set to the key 'secret' in secret 's3-credentials'>  Optional: false
+    Mounts:           <none>
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:                      <none>
+QoS Class:                    Burstable
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age   From               Message
+  ----     ------            ----  ----               -------
+  Warning  FailedScheduling  10s   default-scheduler  0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+  Normal   Scheduled         7s    default-scheduler  Successfully assigned hw5/skills-cpu-wait-6mcbc to de-hw5-control-plane
+  Normal   Pulled            7s    kubelet            Container image "de-hw5-skills:1" already present on machine
+  Normal   Created           7s    kubelet            Created container: skills
+  Normal   Started           7s    kubelet            Started container skills

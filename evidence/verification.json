@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "source_sha256": true,
+    "s3_get_integrity": true,
+    "partition_coverage": true,
+    "all_record_values_and_order_preserved": true,
+    "original_hw3_code": true,
+    "real_oomkilled_137": true,
+    "limit_from_measured_peak": true,
+    "tuned_completed": true,
+    "all_pair_counts_match_hw3": true,
+    "top10_matches_hw3": true,
+    "one_result_per_index": true,
+    "parallel_source_coverage": true,
+    "four_workers_overlap": true,
+    "pending_due_to_cpu": true,
+    "cpu_job_completed_after_release": true,
+    "same_cpu_pod_resumed": true,
+    "scheduler_preemption": true,
+    "high_priority_job_completed": true,
+    "quota_admission_rejected": true,
+    "quota_accepted_after_release": true
+  }
+}

@@ -1,0 +1,4 @@
+{"event": "start", "key": "parts/part-01.csv", "index": 1, "memory": {"rss_peak_bytes": 50421760, "memory.peak": 42336256, "memory.current": 42336256, "memory.max": 117440512, "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"}}
+progress chunks=1 rows=2000 selected=24
+progress chunks=25 rows=50000 selected=690
+{"index": 1, "source_key": "parts/part-01.csv", "rows": 57347, "selected_rows": 804, "chunks": 29, "s3_bytes": 210224414, "seconds": 1.340191416995367, "memory": {"rss_peak_bytes": 55926784, "memory.peak": 47702016, "memory.current": 47652864, "memory.max": 117440512, "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"}}

@@ -1,0 +1,1 @@
+sha256:dbefa4b8f90fdd700a4ceed91661c82419efc777d4c7840f0e80d5fbeffac0fa ["de-hw5-skills@sha256:dbefa4b8f90fdd700a4ceed91661c82419efc777d4c7840f0e80d5fbeffac0fa"]

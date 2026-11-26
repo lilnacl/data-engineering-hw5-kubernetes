@@ -1,0 +1,17 @@
+{
+  "allocatable_millicpu": 12000,
+  "existing_requests_millicpu": 1200,
+  "low_uid": "39cebae7-2c98-4df3-b4e7-21207a83632f",
+  "low_request": "9800m",
+  "high_request": "2000m",
+  "low_priority": 100,
+  "high_priority": 1000,
+  "disruption": {
+    "lastProbeTime": null,
+    "lastTransitionTime": "2026-11-26T09:51:10Z",
+    "message": "default-scheduler: preempting to accommodate a higher priority pod",
+    "reason": "PreemptionByScheduler",
+    "status": "True",
+    "type": "DisruptionTarget"
+  }
+}

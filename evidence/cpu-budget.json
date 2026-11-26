@@ -1,0 +1,6 @@
+{
+  "allocatable_millicpu": 12000,
+  "existing_requests_millicpu": 1200,
+  "blocker_request": "9800m",
+  "waiting_request": "2000m"
+}

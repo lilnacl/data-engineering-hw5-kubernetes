@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!requirements.txt
+!hw3/
+!hw3/*.py
+!hw5/
+!hw5/*.py

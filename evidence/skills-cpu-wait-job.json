@@ -1,0 +1,134 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "creationTimestamp": "2026-11-26T09:50:59Z",
+    "generation": 1,
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88",
+      "batch.kubernetes.io/job-name": "skills-cpu-wait",
+      "controller-uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88",
+      "job-name": "skills-cpu-wait"
+    },
+    "name": "skills-cpu-wait",
+    "namespace": "hw5",
+    "resourceVersion": "1187",
+    "uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88"
+  },
+  "spec": {
+    "activeDeadlineSeconds": 600,
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "creationTimestamp": null,
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88",
+          "batch.kubernetes.io/job-name": "skills-cpu-wait",
+          "controller-uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88",
+          "job-name": "skills-cpu-wait"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "args": [
+              "--prefix",
+              "runs/cpu-wait"
+            ],
+            "env": [
+              {
+                "name": "S3_ENDPOINT",
+                "value": "http://rustfs.hw5.svc.cluster.local:9000"
+              },
+              {
+                "name": "S3_ACCESS_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "access",
+                    "name": "s3-credentials"
+                  }
+                }
+              },
+              {
+                "name": "S3_SECRET_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "secret",
+                    "name": "s3-credentials"
+                  }
+                }
+              }
+            ],
+            "image": "de-hw5-skills:1",
+            "imagePullPolicy": "Never",
+            "name": "skills",
+            "resources": {
+              "limits": {
+                "cpu": "2",
+                "memory": "112Mi"
+              },
+              "requests": {
+                "cpu": "2",
+                "memory": "64Mi"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              },
+              "readOnlyRootFilesystem": true
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30
+      }
+    }
+  },
+  "status": {
+    "completionTime": "2026-11-26T09:51:09Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-11-26T09:51:09Z",
+        "lastTransitionTime": "2026-11-26T09:51:09Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-11-26T09:51:09Z",
+        "lastTransitionTime": "2026-11-26T09:51:09Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-11-26T09:50:59Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}

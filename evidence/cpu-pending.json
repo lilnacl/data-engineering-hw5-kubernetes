@@ -1,0 +1,128 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "creationTimestamp": "2026-11-26T09:50:59Z",
+    "finalizers": [
+      "batch.kubernetes.io/job-tracking"
+    ],
+    "generateName": "skills-cpu-wait-",
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88",
+      "batch.kubernetes.io/job-name": "skills-cpu-wait",
+      "controller-uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88",
+      "job-name": "skills-cpu-wait"
+    },
+    "name": "skills-cpu-wait-6mcbc",
+    "namespace": "hw5",
+    "ownerReferences": [
+      {
+        "apiVersion": "batch/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "Job",
+        "name": "skills-cpu-wait",
+        "uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88"
+      }
+    ],
+    "resourceVersion": "1156",
+    "uid": "7d6e4274-982d-464d-8c41-0056ab8ba9b7"
+  },
+  "spec": {
+    "automountServiceAccountToken": false,
+    "containers": [
+      {
+        "args": [
+          "--prefix",
+          "runs/cpu-wait"
+        ],
+        "env": [
+          {
+            "name": "S3_ENDPOINT",
+            "value": "http://rustfs.hw5.svc.cluster.local:9000"
+          },
+          {
+            "name": "S3_ACCESS_KEY",
+            "valueFrom": {
+              "secretKeyRef": {
+                "key": "access",
+                "name": "s3-credentials"
+              }
+            }
+          },
+          {
+            "name": "S3_SECRET_KEY",
+            "valueFrom": {
+              "secretKeyRef": {
+                "key": "secret",
+                "name": "s3-credentials"
+              }
+            }
+          }
+        ],
+        "image": "de-hw5-skills:1",
+        "imagePullPolicy": "Never",
+        "name": "skills",
+        "resources": {
+          "limits": {
+            "cpu": "2",
+            "memory": "112Mi"
+          },
+          "requests": {
+            "cpu": "2",
+            "memory": "64Mi"
+          }
+        },
+        "securityContext": {
+          "allowPrivilegeEscalation": false,
+          "capabilities": {
+            "drop": [
+              "ALL"
+            ]
+          },
+          "readOnlyRootFilesystem": true
+        },
+        "terminationMessagePath": "/dev/termination-log",
+        "terminationMessagePolicy": "File"
+      }
+    ],
+    "dnsPolicy": "ClusterFirst",
+    "enableServiceLinks": true,
+    "preemptionPolicy": "PreemptLowerPriority",
+    "priority": 0,
+    "restartPolicy": "Never",
+    "schedulerName": "default-scheduler",
+    "securityContext": {},
+    "serviceAccount": "default",
+    "serviceAccountName": "default",
+    "terminationGracePeriodSeconds": 30,
+    "tolerations": [
+      {
+        "effect": "NoExecute",
+        "key": "node.kubernetes.io/not-ready",
+        "operator": "Exists",
+        "tolerationSeconds": 300
+      },
+      {
+        "effect": "NoExecute",
+        "key": "node.kubernetes.io/unreachable",
+        "operator": "Exists",
+        "tolerationSeconds": 300
+      }
+    ]
+  },
+  "status": {
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-11-26T09:50:59Z",
+        "message": "0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+        "reason": "Unschedulable",
+        "status": "False",
+        "type": "PodScheduled"
+      }
+    ],
+    "phase": "Pending",
+    "qosClass": "Burstable"
+  }
+}

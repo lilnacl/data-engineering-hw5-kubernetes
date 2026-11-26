@@ -1,0 +1,45 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: skills-oom
+  namespace: hw5
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 600
+  template:
+    spec:
+      restartPolicy: Never
+      automountServiceAccountToken: false
+      containers:
+      - name: skills
+        image: de-hw5-skills:1
+        imagePullPolicy: Never
+        args:
+        - --prefix
+        - runs/oom
+        resources:
+          requests:
+            cpu: 250m
+            memory: 32Mi
+          limits:
+            cpu: '1'
+            memory: 48Mi
+        env:
+        - name: S3_ENDPOINT
+          value: http://rustfs.hw5.svc.cluster.local:9000
+        - name: S3_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: s3-credentials
+              key: access
+        - name: S3_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: s3-credentials
+              key: secret
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+          readOnlyRootFilesystem: true

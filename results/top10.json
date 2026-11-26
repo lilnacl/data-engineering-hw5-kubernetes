@@ -1,0 +1,72 @@
+[
+  {
+    "skills": [
+      "go",
+      "postgresql"
+    ],
+    "count": 1074
+  },
+  {
+    "skills": [
+      "docker",
+      "go"
+    ],
+    "count": 696
+  },
+  {
+    "skills": [
+      "go",
+      "sql"
+    ],
+    "count": 545
+  },
+  {
+    "skills": [
+      "git",
+      "go"
+    ],
+    "count": 534
+  },
+  {
+    "skills": [
+      "go",
+      "linux"
+    ],
+    "count": 488
+  },
+  {
+    "skills": [
+      "docker",
+      "postgresql"
+    ],
+    "count": 464
+  },
+  {
+    "skills": [
+      "go",
+      "kafka"
+    ],
+    "count": 438
+  },
+  {
+    "skills": [
+      "go",
+      "kubernetes"
+    ],
+    "count": 411
+  },
+  {
+    "skills": [
+      "go",
+      "python"
+    ],
+    "count": 407
+  },
+  {
+    "skills": [
+      "go",
+      "redis"
+    ],
+    "count": 394
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "creationTimestamp": "2026-11-26T09:51:31Z",
+    "name": "quota-second",
+    "namespace": "hw5-quota",
+    "resourceVersion": "1293",
+    "uid": "645761ed-b25e-41f6-88e4-49cd9a46fb48"
+  },
+  "spec": {
+    "automountServiceAccountToken": false,
+    "containers": [
+      {
+        "command": [
+          "python",
+          "-c",
+          "import time; print(\"CPU request reserved\", flush=True); time.sleep(600)"
+        ],
+        "image": "de-hw5-skills:1",
+        "imagePullPolicy": "Never",
+        "name": "reservation",
+        "resources": {
+          "limits": {
+            "cpu": "600m",
+            "memory": "128Mi"
+          },
+          "requests": {
+            "cpu": "600m",
+            "memory": "64Mi"
+          }
+        },
+        "terminationMessagePath": "/dev/termination-log",
+        "terminationMessagePolicy": "File"
+      }
+    ],
+    "dnsPolicy": "ClusterFirst",
+    "enableServiceLinks": true,
+    "nodeName": "de-hw5-control-plane",
+    "preemptionPolicy": "PreemptLowerPriority",
+    "priority": 0,
+    "restartPolicy": "Never",
+    "schedulerName": "default-scheduler",
+    "securityContext": {},
+    "serviceAccount": "default",
+    "serviceAccountName": "default",
+    "terminationGracePeriodSeconds": 1,
+    "tolerations": [
+      {
+        "effect": "NoExecute",
+        "key": "node.kubernetes.io/not-ready",
+        "operator": "Exists",
+        "tolerationSeconds": 300
+      },
+      {
+        "effect": "NoExecute",
+        "key": "node.kubernetes.io/unreachable",
+        "operator": "Exists",
+        "tolerationSeconds": 300
+      }
+    ]
+  },
+  "status": {
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-11-26T09:51:32Z",
+        "status": "True",
+        "type": "PodReadyToStartContainers"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-11-26T09:51:31Z",
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-11-26T09:51:32Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-11-26T09:51:32Z",
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-11-26T09:51:31Z",
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "containerID": "containerd://7d5f85d6de49136ca0bf6ce6d98a41ce04ffc323741f6bacbe86f153a7f18a89",
+        "image": "docker.io/library/de-hw5-skills:1",
+        "imageID": "sha256:b3e4ad83d0b3e804d484c09dd79276c41aefec5c1b48f7f795e5f02aac289dc7",
+        "lastState": {},
+        "name": "reservation",
+        "ready": true,
+        "restartCount": 0,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2026-11-26T09:51:31Z"
+          }
+        }
+      }
+    ],
+    "hostIP": "172.22.0.2",
+    "hostIPs": [
+      {
+        "ip": "172.22.0.2"
+      }
+    ],
+    "phase": "Running",
+    "podIP": "10.244.0.25",
+    "podIPs": [
+      {
+        "ip": "10.244.0.25"
+      }
+    ],
+    "qosClass": "Burstable",
+    "startTime": "2026-11-26T09:51:31Z"
+  }
+}

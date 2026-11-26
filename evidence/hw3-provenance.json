@@ -1,0 +1,26 @@
+{
+  "commit": "795746ef9d0625748e467254bb45859eb3eab978",
+  "files": [
+    {
+      "source_path": "src/common.py",
+      "local_path": "hw3/common.py",
+      "git_blob_sha1": "41f43f735b807e42687258e4d69e913a849c4866",
+      "sha256": "08ec0ce4d68ba71230d4363b1a26a26be3aa03221cfa52a77201adb2ee5a15bf",
+      "matches_hw3_commit": true
+    },
+    {
+      "source_path": "src/mapreduce.py",
+      "local_path": "hw3/mapreduce.py",
+      "git_blob_sha1": "18f88aa19bdc07267cf7189ff75c208d1b03cafb",
+      "sha256": "63f42059ba4d30f3cc58e795a223a5f89852d0b2f009b7c91a7fc865ef67ea54",
+      "matches_hw3_commit": true
+    },
+    {
+      "source_path": "results/mapreduce/counts_2.json",
+      "local_path": "baseline/counts_2.json",
+      "git_blob_sha1": "534287a9ff317168afef68fcb96a993997115714",
+      "sha256": "a6b3d39d2e8b8bb03502e98a4f245daea2425981e91f622e35511e8a78aa33a1",
+      "matches_hw3_commit": true
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+Name:             skills-parallel-3-b4pjw
+Namespace:        hw5
+Priority:         0
+Service Account:  default
+Node:             de-hw5-control-plane/172.22.0.2
+Start Time:       Thu, 26 Nov 2026 12:50:49 +0300
+Labels:           batch.kubernetes.io/controller-uid=930c849a-e6cc-4438-8fa1-76d67120b9d6
+                  batch.kubernetes.io/job-completion-index=3
+                  batch.kubernetes.io/job-name=skills-parallel
+                  controller-uid=930c849a-e6cc-4438-8fa1-76d67120b9d6
+                  job-name=skills-parallel
+Annotations:      batch.kubernetes.io/job-completion-index: 3
+Status:           Succeeded
+IP:               10.244.0.18
+IPs:
+  IP:           10.244.0.18
+Controlled By:  Job/skills-parallel
+Containers:
+  skills:
+    Container ID:  containerd://f63076482404773b8b3a24ba779af84fedb58496b5a70088854707ab2ae2c8e1
+    Image:         de-hw5-skills:1
+    Image ID:      sha256:b3e4ad83d0b3e804d484c09dd79276c41aefec5c1b48f7f795e5f02aac289dc7
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      --prefix
+      runs/parallel
+      --key
+      parts/part-{index:02d}.csv
+    State:          Terminated
+      Reason:       Completed
+      Exit Code:    0
+      Started:      Thu, 26 Nov 2026 12:50:49 +0300
+      Finished:     Thu, 26 Nov 2026 12:50:51 +0300
+    Ready:          False
+    Restart Count:  0
+    Limits:
+      cpu:     1
+      memory:  112Mi
+    Requests:
+      cpu:     250m
+      memory:  64Mi
+    Environment:
+      S3_ENDPOINT:           http://rustfs.hw5.svc.cluster.local:9000
+      S3_ACCESS_KEY:         <set to the key 'access' in secret 's3-credentials'>  Optional: false
+      S3_SECRET_KEY:         <set to the key 'secret' in secret 's3-credentials'>  Optional: false
+      JOB_COMPLETION_INDEX:   (v1:metadata.labels['batch.kubernetes.io/job-completion-index'])
+    Mounts:                  <none>
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:                      <none>
+QoS Class:                    Burstable
+Node-Selectors:               <none>
+Tolerations:                  node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  6s    default-scheduler  Successfully assigned hw5/skills-parallel-3-b4pjw to de-hw5-control-plane
+  Normal  Pulled     6s    kubelet            Container image "de-hw5-skills:1" already present on machine
+  Normal  Created    6s    kubelet            Created container: skills
+  Normal  Started    6s    kubelet            Started container skills

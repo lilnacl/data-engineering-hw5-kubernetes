@@ -1,0 +1,52 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: skills-low
+  namespace: hw5
+spec:
+  backoffLimit: 0
+  activeDeadlineSeconds: 600
+  template:
+    spec:
+      restartPolicy: Never
+      automountServiceAccountToken: false
+      containers:
+      - name: skills
+        image: de-hw5-skills:1
+        imagePullPolicy: Never
+        args:
+        - "import signal,time,sys\nfrom hw5.worker import main\ndef stop(*args):\n\
+          \ print(\"SIGTERM: cleanup after preemption\", flush=True)\n time.sleep(8)\n\
+          \ sys.exit(0)\nsignal.signal(signal.SIGTERM,stop)\nsys.argv=[\"worker\"\
+          ,\"--prefix\",\"runs/low\"]\nwhile True: main()"
+        resources:
+          requests:
+            cpu: 9800m
+            memory: 64Mi
+          limits:
+            cpu: 9800m
+            memory: 112Mi
+        env:
+        - name: S3_ENDPOINT
+          value: http://rustfs.hw5.svc.cluster.local:9000
+        - name: S3_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: s3-credentials
+              key: access
+        - name: S3_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: s3-credentials
+              key: secret
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+          readOnlyRootFilesystem: true
+        command:
+        - python
+        - -c
+      priorityClassName: hw5-low
+      terminationGracePeriodSeconds: 15

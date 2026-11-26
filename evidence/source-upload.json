@@ -1,0 +1,58 @@
+{
+  "source_sha256": "303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65",
+  "objects": [
+    {
+      "key": "raw/it_vacancies_2024.csv",
+      "sha256": "303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65",
+      "bytes": 847619384,
+      "get_bytes": 847619384,
+      "get_sha256": "303db922b541e4440906f5a7e8be32fb55e8808f950ffddb8c272f1548212a65"
+    },
+    {
+      "index": 0,
+      "rows": 57347,
+      "start_record": 0,
+      "end_record_exclusive": 57347,
+      "bytes": 210424605,
+      "sha256": "ce823fb0308033b4dceeebe2ff0f2c32b259c27a395f40ffffda834f3d426886",
+      "key": "parts/part-00.csv",
+      "get_bytes": 210424605,
+      "get_sha256": "ce823fb0308033b4dceeebe2ff0f2c32b259c27a395f40ffffda834f3d426886"
+    },
+    {
+      "index": 1,
+      "rows": 57347,
+      "start_record": 57347,
+      "end_record_exclusive": 114694,
+      "bytes": 210224414,
+      "sha256": "5fb4baacf92e424f7f244ee981d53f460821c42d4d4cd6d336645b83fb546bb0",
+      "key": "parts/part-01.csv",
+      "get_bytes": 210224414,
+      "get_sha256": "5fb4baacf92e424f7f244ee981d53f460821c42d4d4cd6d336645b83fb546bb0"
+    },
+    {
+      "index": 2,
+      "rows": 57347,
+      "start_record": 114694,
+      "end_record_exclusive": 172041,
+      "bytes": 212035661,
+      "sha256": "8cca4b733041e1df4afcef9f4d34bc951c49fd4437bf6d2e2e9e36ca43ab9cd0",
+      "key": "parts/part-02.csv",
+      "get_bytes": 212035661,
+      "get_sha256": "8cca4b733041e1df4afcef9f4d34bc951c49fd4437bf6d2e2e9e36ca43ab9cd0"
+    },
+    {
+      "index": 3,
+      "rows": 57347,
+      "start_record": 172041,
+      "end_record_exclusive": 229388,
+      "bytes": 215164762,
+      "sha256": "dedec3b506897588e3a30d5a5da032aac4349386ba484928b71f06b9a4ea5aef",
+      "key": "parts/part-03.csv",
+      "get_bytes": 215164762,
+      "get_sha256": "dedec3b506897588e3a30d5a5da032aac4349386ba484928b71f06b9a4ea5aef"
+    }
+  ],
+  "rows": 229388,
+  "parts": 4
+}

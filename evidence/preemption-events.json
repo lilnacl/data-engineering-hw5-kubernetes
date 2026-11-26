@@ -1,0 +1,3197 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:58Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "cpu-reservation",
+                "namespace": "hw5",
+                "resourceVersion": "1142",
+                "uid": "21b03138-c1c7-4030-b1e2-56b29c540758"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:58Z",
+            "message": "Successfully assigned hw5/cpu-reservation to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:58Z",
+                "name": "cpu-reservation.18eb8f8093d0f547",
+                "namespace": "hw5",
+                "resourceVersion": "1144",
+                "uid": "2e36c563-8b35-4771-ad15-4d7d5332a9c4"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:58Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{reservation}",
+                "kind": "Pod",
+                "name": "cpu-reservation",
+                "namespace": "hw5",
+                "resourceVersion": "1143",
+                "uid": "21b03138-c1c7-4030-b1e2-56b29c540758"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:58Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:58Z",
+                "name": "cpu-reservation.18eb8f8097582eb3",
+                "namespace": "hw5",
+                "resourceVersion": "1146",
+                "uid": "d543cd93-c8f5-45e2-990a-fe36c94550a5"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:58Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{reservation}",
+                "kind": "Pod",
+                "name": "cpu-reservation",
+                "namespace": "hw5",
+                "resourceVersion": "1143",
+                "uid": "21b03138-c1c7-4030-b1e2-56b29c540758"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:58Z",
+            "message": "Created container: reservation",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:58Z",
+                "name": "cpu-reservation.18eb8f8097c33717",
+                "namespace": "hw5",
+                "resourceVersion": "1147",
+                "uid": "aa040aa4-7f99-466f-bb81-b5c76d1bdea6"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:58Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{reservation}",
+                "kind": "Pod",
+                "name": "cpu-reservation",
+                "namespace": "hw5",
+                "resourceVersion": "1143",
+                "uid": "21b03138-c1c7-4030-b1e2-56b29c540758"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:58Z",
+            "message": "Started container reservation",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:58Z",
+                "name": "cpu-reservation.18eb8f809a426e94",
+                "namespace": "hw5",
+                "resourceVersion": "1148",
+                "uid": "5cf57406-c0a9-4fe6-9131-024292da0988"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:00Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{reservation}",
+                "kind": "Pod",
+                "name": "cpu-reservation",
+                "namespace": "hw5",
+                "resourceVersion": "1143",
+                "uid": "21b03138-c1c7-4030-b1e2-56b29c540758"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:00Z",
+            "message": "Stopping container reservation",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:00Z",
+                "name": "cpu-reservation.18eb8f80e7e9a7a2",
+                "namespace": "hw5",
+                "resourceVersion": "1159",
+                "uid": "be508eb3-806f-42ee-b484-77f147abd114"
+            },
+            "reason": "Killing",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "rustfs-9ff59f976-rm5cd",
+                "namespace": "hw5",
+                "resourceVersion": "732",
+                "uid": "801e3884-a5cf-444b-a58b-f70fef185a8b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:15Z",
+            "message": "Successfully assigned hw5/rustfs-9ff59f976-rm5cd to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:15Z",
+                "name": "rustfs-9ff59f976-rm5cd.18eb8f6869b0eb4d",
+                "namespace": "hw5",
+                "resourceVersion": "823",
+                "uid": "7e7f8f88-2871-498e-9552-368e2ca87317"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{rustfs}",
+                "kind": "Pod",
+                "name": "rustfs-9ff59f976-rm5cd",
+                "namespace": "hw5",
+                "resourceVersion": "822",
+                "uid": "801e3884-a5cf-444b-a58b-f70fef185a8b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:15Z",
+            "message": "Pulling image \"rustfs/rustfs:1.0.1@sha256:1803faef57627e2d9c2e7d89d655d712ddded5389040054987163043fecb6a3c\"",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:15Z",
+                "name": "rustfs-9ff59f976-rm5cd.18eb8f688014a27a",
+                "namespace": "hw5",
+                "resourceVersion": "826",
+                "uid": "879ad83a-ff57-4077-9b9a-aeeb311d7257"
+            },
+            "reason": "Pulling",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:40Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{rustfs}",
+                "kind": "Pod",
+                "name": "rustfs-9ff59f976-rm5cd",
+                "namespace": "hw5",
+                "resourceVersion": "822",
+                "uid": "801e3884-a5cf-444b-a58b-f70fef185a8b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:40Z",
+            "message": "Successfully pulled image \"rustfs/rustfs:1.0.1@sha256:1803faef57627e2d9c2e7d89d655d712ddded5389040054987163043fecb6a3c\" in 25.271s (25.271s including waiting). Image size: 105757343 bytes.",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:40Z",
+                "name": "rustfs-9ff59f976-rm5cd.18eb8f6e623c94b0",
+                "namespace": "hw5",
+                "resourceVersion": "861",
+                "uid": "43a8f6be-63f6-4a38-b6fe-cf2d580236c8"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:40Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{rustfs}",
+                "kind": "Pod",
+                "name": "rustfs-9ff59f976-rm5cd",
+                "namespace": "hw5",
+                "resourceVersion": "822",
+                "uid": "801e3884-a5cf-444b-a58b-f70fef185a8b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:40Z",
+            "message": "Created container: rustfs",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:40Z",
+                "name": "rustfs-9ff59f976-rm5cd.18eb8f6e636fdd13",
+                "namespace": "hw5",
+                "resourceVersion": "862",
+                "uid": "3f44b936-1777-4c1f-9903-2944e6404c5f"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:40Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{rustfs}",
+                "kind": "Pod",
+                "name": "rustfs-9ff59f976-rm5cd",
+                "namespace": "hw5",
+                "resourceVersion": "822",
+                "uid": "801e3884-a5cf-444b-a58b-f70fef185a8b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:40Z",
+            "message": "Started container rustfs",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:40Z",
+                "name": "rustfs-9ff59f976-rm5cd.18eb8f6e667a6546",
+                "namespace": "hw5",
+                "resourceVersion": "863",
+                "uid": "452f8b70-8128-4fe9-9065-30b430672f84"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "rustfs-9ff59f976",
+                "namespace": "hw5",
+                "resourceVersion": "730",
+                "uid": "b38b41c4-0a70-40ca-81ed-fe1b5a9e8dce"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "Created pod: rustfs-9ff59f976-rm5cd",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-9ff59f976.18eb8f673e605787",
+                "namespace": "hw5",
+                "resourceVersion": "736",
+                "uid": "fbb2af36-f8f6-4926-9eee-f9a40a08ceb8"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "replicaset-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk1",
+                "namespace": "hw5",
+                "resourceVersion": "721",
+                "uid": "e4ff5c72-945f-4adc-bc15-557a1118fc9c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "waiting for first consumer to be created before binding",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk1.18eb8f673d5ce12a",
+                "namespace": "hw5",
+                "resourceVersion": "723",
+                "uid": "dc0fbce6-2cb0-4618-8c61-d2d08f7a26ec"
+            },
+            "reason": "WaitForFirstConsumer",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk1",
+                "namespace": "hw5",
+                "resourceVersion": "743",
+                "uid": "e4ff5c72-945f-4adc-bc15-557a1118fc9c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk1.18eb8f673eb6b24d",
+                "namespace": "hw5",
+                "resourceVersion": "746",
+                "uid": "ae26a1e7-3377-4b03-8636-5da9838b6263"
+            },
+            "reason": "ExternalProvisioning",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk1",
+                "namespace": "hw5",
+                "resourceVersion": "743",
+                "uid": "e4ff5c72-945f-4adc-bc15-557a1118fc9c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "External provisioner is provisioning volume for claim \"hw5/rustfs-disk1\"",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk1.18eb8f673ec8a5d7",
+                "namespace": "hw5",
+                "resourceVersion": "750",
+                "uid": "84c3088f-825f-446b-8bc4-395403c4671f"
+            },
+            "reason": "Provisioning",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:14Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk1",
+                "namespace": "hw5",
+                "resourceVersion": "743",
+                "uid": "e4ff5c72-945f-4adc-bc15-557a1118fc9c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:14Z",
+            "message": "Successfully provisioned volume pvc-e4ff5c72-945f-4adc-bc15-557a1118fc9c",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:14Z",
+                "name": "rustfs-disk1.18eb8f68458ec84f",
+                "namespace": "hw5",
+                "resourceVersion": "821",
+                "uid": "3f39472d-8a4e-4838-9528-cba9cf105083"
+            },
+            "reason": "ProvisioningSucceeded",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk2",
+                "namespace": "hw5",
+                "resourceVersion": "722",
+                "uid": "de34e4c4-1a93-4627-bf7e-e2c1c0011a41"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "waiting for first consumer to be created before binding",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk2.18eb8f673d89b1fc",
+                "namespace": "hw5",
+                "resourceVersion": "724",
+                "uid": "d43037aa-b95e-4b9c-8750-63c8078bc7ef"
+            },
+            "reason": "WaitForFirstConsumer",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk2",
+                "namespace": "hw5",
+                "resourceVersion": "747",
+                "uid": "de34e4c4-1a93-4627-bf7e-e2c1c0011a41"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk2.18eb8f673ed9df2f",
+                "namespace": "hw5",
+                "resourceVersion": "751",
+                "uid": "6ef04604-7460-4ec4-a02d-9ff986960b11"
+            },
+            "reason": "ExternalProvisioning",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk2",
+                "namespace": "hw5",
+                "resourceVersion": "747",
+                "uid": "de34e4c4-1a93-4627-bf7e-e2c1c0011a41"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "External provisioner is provisioning volume for claim \"hw5/rustfs-disk2\"",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk2.18eb8f673f031386",
+                "namespace": "hw5",
+                "resourceVersion": "755",
+                "uid": "4cefeee4-6cdc-477f-94da-3b37f423f18a"
+            },
+            "reason": "Provisioning",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk2",
+                "namespace": "hw5",
+                "resourceVersion": "747",
+                "uid": "de34e4c4-1a93-4627-bf7e-e2c1c0011a41"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:12Z",
+            "message": "Successfully provisioned volume pvc-de34e4c4-1a93-4627-bf7e-e2c1c0011a41",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:12Z",
+                "name": "rustfs-disk2.18eb8f67c21fdda0",
+                "namespace": "hw5",
+                "resourceVersion": "797",
+                "uid": "8dbf5db9-d8eb-448e-addf-3d725b95b797"
+            },
+            "reason": "ProvisioningSucceeded",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk3",
+                "namespace": "hw5",
+                "resourceVersion": "725",
+                "uid": "4d280341-df9b-4baa-9e2a-36da99ef9b79"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "waiting for first consumer to be created before binding",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk3.18eb8f673db935e2",
+                "namespace": "hw5",
+                "resourceVersion": "726",
+                "uid": "89fb8954-6997-406b-b51c-4f8ed4b3be14"
+            },
+            "reason": "WaitForFirstConsumer",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk3",
+                "namespace": "hw5",
+                "resourceVersion": "749",
+                "uid": "4d280341-df9b-4baa-9e2a-36da99ef9b79"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk3.18eb8f673ef860c1",
+                "namespace": "hw5",
+                "resourceVersion": "757",
+                "uid": "6c7bc40a-4dae-4fbc-8ad7-f68fc6c6e0c8"
+            },
+            "reason": "ExternalProvisioning",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk3",
+                "namespace": "hw5",
+                "resourceVersion": "749",
+                "uid": "4d280341-df9b-4baa-9e2a-36da99ef9b79"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "External provisioner is provisioning volume for claim \"hw5/rustfs-disk3\"",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk3.18eb8f673f07f4df",
+                "namespace": "hw5",
+                "resourceVersion": "756",
+                "uid": "e0b3d8ed-03c4-444b-9ce6-be421d06963a"
+            },
+            "reason": "Provisioning",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk3",
+                "namespace": "hw5",
+                "resourceVersion": "749",
+                "uid": "4d280341-df9b-4baa-9e2a-36da99ef9b79"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:13Z",
+            "message": "Successfully provisioned volume pvc-4d280341-df9b-4baa-9e2a-36da99ef9b79",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:14Z",
+                "name": "rustfs-disk3.18eb8f6821c3d794",
+                "namespace": "hw5",
+                "resourceVersion": "820",
+                "uid": "a48b93cc-8217-4998-80b8-9e1c5d20dda2"
+            },
+            "reason": "ProvisioningSucceeded",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk4",
+                "namespace": "hw5",
+                "resourceVersion": "727",
+                "uid": "b7c3c444-6e7e-42e1-8b11-cc2ee5f0eb74"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "waiting for first consumer to be created before binding",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk4.18eb8f673de1f96e",
+                "namespace": "hw5",
+                "resourceVersion": "728",
+                "uid": "4347888e-a891-4833-8b53-e5fe8913681d"
+            },
+            "reason": "WaitForFirstConsumer",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk4",
+                "namespace": "hw5",
+                "resourceVersion": "753",
+                "uid": "b7c3c444-6e7e-42e1-8b11-cc2ee5f0eb74"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "Waiting for a volume to be created either by the external provisioner 'rancher.io/local-path' or manually by the system administrator. If volume creation is delayed, please verify that the provisioner is running and correctly registered.",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk4.18eb8f673f04ee9f",
+                "namespace": "hw5",
+                "resourceVersion": "759",
+                "uid": "ba0236a8-b752-41f6-9cc3-26f8d8b4251d"
+            },
+            "reason": "ExternalProvisioning",
+            "reportingComponent": "persistentvolume-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "persistentvolume-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk4",
+                "namespace": "hw5",
+                "resourceVersion": "753",
+                "uid": "b7c3c444-6e7e-42e1-8b11-cc2ee5f0eb74"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "External provisioner is provisioning volume for claim \"hw5/rustfs-disk4\"",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs-disk4.18eb8f673f1daa2a",
+                "namespace": "hw5",
+                "resourceVersion": "768",
+                "uid": "3a1d674c-c5ac-48bb-a594-160578f9928a"
+            },
+            "reason": "Provisioning",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "PersistentVolumeClaim",
+                "name": "rustfs-disk4",
+                "namespace": "hw5",
+                "resourceVersion": "753",
+                "uid": "b7c3c444-6e7e-42e1-8b11-cc2ee5f0eb74"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:13Z",
+            "message": "Successfully provisioned volume pvc-b7c3c444-6e7e-42e1-8b11-cc2ee5f0eb74",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:14Z",
+                "name": "rustfs-disk4.18eb8f6815bdfa26",
+                "namespace": "hw5",
+                "resourceVersion": "815",
+                "uid": "64f4c497-246f-4474-ae4b-af4bb5cecd6a"
+            },
+            "reason": "ProvisioningSucceeded",
+            "reportingComponent": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92",
+            "reportingInstance": "",
+            "source": {
+                "component": "rancher.io/local-path_local-path-provisioner-7dc846544d-s24wq_a8bf5bbb-0d66-4bf3-a68b-32ab81f88f92"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:49:10Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "rustfs",
+                "namespace": "hw5",
+                "resourceVersion": "729",
+                "uid": "520010e5-0d1f-4cb1-ba5e-a071a6c47ecb"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:49:10Z",
+            "message": "Scaled up replica set rustfs-9ff59f976 from 0 to 1",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:49:10Z",
+                "name": "rustfs.18eb8f673e41d0c0",
+                "namespace": "hw5",
+                "resourceVersion": "731",
+                "uid": "a1a89099-a50e-47b3-9375-919511c6f4d2"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "deployment-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:59Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-cpu-wait-6mcbc",
+                "namespace": "hw5",
+                "resourceVersion": "1152",
+                "uid": "7d6e4274-982d-464d-8c41-0056ab8ba9b7"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:59Z",
+            "message": "0/1 nodes are available: 1 Insufficient cpu. preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:59Z",
+                "name": "skills-cpu-wait-6mcbc.18eb8f80d76ec233",
+                "namespace": "hw5",
+                "resourceVersion": "1154",
+                "uid": "4462b93e-6e51-48de-acb3-39f455fae793"
+            },
+            "reason": "FailedScheduling",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:02Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-cpu-wait-6mcbc",
+                "namespace": "hw5",
+                "resourceVersion": "1156",
+                "uid": "7d6e4274-982d-464d-8c41-0056ab8ba9b7"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:02Z",
+            "message": "Successfully assigned hw5/skills-cpu-wait-6mcbc to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:02Z",
+                "name": "skills-cpu-wait-6mcbc.18eb8f816470d1b8",
+                "namespace": "hw5",
+                "resourceVersion": "1165",
+                "uid": "a2256fb6-cba7-4b36-9396-a1ee59899d4c"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:02Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-cpu-wait-6mcbc",
+                "namespace": "hw5",
+                "resourceVersion": "1164",
+                "uid": "7d6e4274-982d-464d-8c41-0056ab8ba9b7"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:02Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:02Z",
+                "name": "skills-cpu-wait-6mcbc.18eb8f816775c6ac",
+                "namespace": "hw5",
+                "resourceVersion": "1167",
+                "uid": "2cb6cb41-7e46-4fbd-bc07-e99f2f9c8b58"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:02Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-cpu-wait-6mcbc",
+                "namespace": "hw5",
+                "resourceVersion": "1164",
+                "uid": "7d6e4274-982d-464d-8c41-0056ab8ba9b7"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:02Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:02Z",
+                "name": "skills-cpu-wait-6mcbc.18eb8f8167ebc1f6",
+                "namespace": "hw5",
+                "resourceVersion": "1168",
+                "uid": "726c10ab-aeaa-4a68-ab12-190a970bc220"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:02Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-cpu-wait-6mcbc",
+                "namespace": "hw5",
+                "resourceVersion": "1164",
+                "uid": "7d6e4274-982d-464d-8c41-0056ab8ba9b7"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:02Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:02Z",
+                "name": "skills-cpu-wait-6mcbc.18eb8f816a865654",
+                "namespace": "hw5",
+                "resourceVersion": "1169",
+                "uid": "7241c033-a134-4203-8d3c-ed55771fcb98"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:59Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-cpu-wait",
+                "namespace": "hw5",
+                "resourceVersion": "1151",
+                "uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:59Z",
+            "message": "Created pod: skills-cpu-wait-6mcbc",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:59Z",
+                "name": "skills-cpu-wait.18eb8f80d7662907",
+                "namespace": "hw5",
+                "resourceVersion": "1153",
+                "uid": "bcaacb65-f62c-46d7-a56b-651fa9d00ebd"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:09Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-cpu-wait",
+                "namespace": "hw5",
+                "resourceVersion": "1185",
+                "uid": "ebd96d67-dc1c-46b2-ab33-ffebddec4a88"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:09Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:09Z",
+                "name": "skills-cpu-wait.18eb8f8302fdca07",
+                "namespace": "hw5",
+                "resourceVersion": "1188",
+                "uid": "1526fe04-4ccd-46fe-9fec-55dde93dfbbd"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-high-8vssb",
+                "namespace": "hw5",
+                "resourceVersion": "1204",
+                "uid": "3248e887-3950-4a2e-94eb-e88f1aeeeca4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:10Z",
+            "message": "0/1 nodes are available: 1 Insufficient cpu.",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:10Z",
+                "name": "skills-high-8vssb.18eb8f8368ac9407",
+                "namespace": "hw5",
+                "resourceVersion": "1211",
+                "uid": "ae3b38f4-4012-4ed6-854a-adc9c4b0e28c"
+            },
+            "reason": "FailedScheduling",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:10Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-high",
+                "namespace": "hw5",
+                "resourceVersion": "1203",
+                "uid": "0ff864ea-8a88-4378-87dc-2c46e43ae538"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:10Z",
+            "message": "Created pod: skills-high-8vssb",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:10Z",
+                "name": "skills-high.18eb8f8368527dda",
+                "namespace": "hw5",
+                "resourceVersion": "1205",
+                "uid": "cf4fb07a-5c7e-4edd-af4d-fef7b26c746f"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-low-rh7mj",
+                "namespace": "hw5",
+                "resourceVersion": "1191",
+                "uid": "39cebae7-2c98-4df3-b4e7-21207a83632f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:09Z",
+            "message": "Successfully assigned hw5/skills-low-rh7mj to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:09Z",
+                "name": "skills-low-rh7mj.18eb8f83229f6ab4",
+                "namespace": "hw5",
+                "resourceVersion": "1195",
+                "uid": "646455d2-604e-4ca2-adf0-0400fdbd26fe"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-low-rh7mj",
+                "namespace": "hw5",
+                "resourceVersion": "1194",
+                "uid": "39cebae7-2c98-4df3-b4e7-21207a83632f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:09Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:09Z",
+                "name": "skills-low-rh7mj.18eb8f8326230a17",
+                "namespace": "hw5",
+                "resourceVersion": "1197",
+                "uid": "a3e31447-326b-46fc-abf4-9b3e1e6117e1"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-low-rh7mj",
+                "namespace": "hw5",
+                "resourceVersion": "1194",
+                "uid": "39cebae7-2c98-4df3-b4e7-21207a83632f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:09Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:09Z",
+                "name": "skills-low-rh7mj.18eb8f8326983823",
+                "namespace": "hw5",
+                "resourceVersion": "1198",
+                "uid": "1fe2ff4a-12d0-4872-b1f8-8f819fa6113f"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-low-rh7mj",
+                "namespace": "hw5",
+                "resourceVersion": "1194",
+                "uid": "39cebae7-2c98-4df3-b4e7-21207a83632f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:09Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:09Z",
+                "name": "skills-low-rh7mj.18eb8f83297827e0",
+                "namespace": "hw5",
+                "resourceVersion": "1199",
+                "uid": "7504ff47-d74f-4ea1-83ce-2670dd62e5b5"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-low-rh7mj",
+                "namespace": "hw5",
+                "resourceVersion": "1201",
+                "uid": "39cebae7-2c98-4df3-b4e7-21207a83632f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:10Z",
+            "message": "Preempted by pod 3248e887-3950-4a2e-94eb-e88f1aeeeca4 on node de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:10Z",
+                "name": "skills-low-rh7mj.18eb8f8368ab78fd",
+                "namespace": "hw5",
+                "resourceVersion": "1209",
+                "uid": "131f7e5b-9c02-4696-85bf-34581ab95046"
+            },
+            "reason": "Preempted",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:51:09Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-low",
+                "namespace": "hw5",
+                "resourceVersion": "1190",
+                "uid": "51480af0-8d66-4530-a21a-cc56a9c35a2c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:51:09Z",
+            "message": "Created pod: skills-low-rh7mj",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:51:09Z",
+                "name": "skills-low.18eb8f8322746c08",
+                "namespace": "hw5",
+                "resourceVersion": "1192",
+                "uid": "f04897fa-168a-4d9d-8431-15df3eb62eb6"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:34Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-oom-mw9nn",
+                "namespace": "hw5",
+                "resourceVersion": "1002",
+                "uid": "26c28808-7f5c-4bdb-9a5f-bdc0d5e9b2bd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:34Z",
+            "message": "Successfully assigned hw5/skills-oom-mw9nn to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:34Z",
+                "name": "skills-oom-mw9nn.18eb8f7af121e15b",
+                "namespace": "hw5",
+                "resourceVersion": "1006",
+                "uid": "88859a1b-9754-4ae2-bf4d-3f253b97cc1b"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:34Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-oom-mw9nn",
+                "namespace": "hw5",
+                "resourceVersion": "1005",
+                "uid": "26c28808-7f5c-4bdb-9a5f-bdc0d5e9b2bd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:34Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:34Z",
+                "name": "skills-oom-mw9nn.18eb8f7af497aabf",
+                "namespace": "hw5",
+                "resourceVersion": "1008",
+                "uid": "8471078b-627f-4121-b914-795d1137913b"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:34Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-oom-mw9nn",
+                "namespace": "hw5",
+                "resourceVersion": "1005",
+                "uid": "26c28808-7f5c-4bdb-9a5f-bdc0d5e9b2bd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:34Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:34Z",
+                "name": "skills-oom-mw9nn.18eb8f7af50fd5ee",
+                "namespace": "hw5",
+                "resourceVersion": "1009",
+                "uid": "c6652c42-7c7d-401f-b99d-639ef1be0adf"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:34Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-oom-mw9nn",
+                "namespace": "hw5",
+                "resourceVersion": "1005",
+                "uid": "26c28808-7f5c-4bdb-9a5f-bdc0d5e9b2bd"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:34Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:34Z",
+                "name": "skills-oom-mw9nn.18eb8f7af807dcfd",
+                "namespace": "hw5",
+                "resourceVersion": "1010",
+                "uid": "b2c0d428-aa47-4130-8857-19362785cb35"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:34Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-oom",
+                "namespace": "hw5",
+                "resourceVersion": "1001",
+                "uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:34Z",
+            "message": "Created pod: skills-oom-mw9nn",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:34Z",
+                "name": "skills-oom.18eb8f7af0fc2727",
+                "namespace": "hw5",
+                "resourceVersion": "1003",
+                "uid": "d878442d-b762-459d-8c7c-6e23712707ad"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:41Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-oom",
+                "namespace": "hw5",
+                "resourceVersion": "1024",
+                "uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:41Z",
+            "message": "Job has reached the specified backoff limit",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:41Z",
+                "name": "skills-oom.18eb8f7c77a5acef",
+                "namespace": "hw5",
+                "resourceVersion": "1027",
+                "uid": "95a77994-9b94-4653-8cef-33224bb685f6"
+            },
+            "reason": "BackoffLimitExceeded",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-parallel-0-t2jn2",
+                "namespace": "hw5",
+                "resourceVersion": "1059",
+                "uid": "a4882d3a-003d-4b92-a1e2-db99795cc569"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Successfully assigned hw5/skills-parallel-0-t2jn2 to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-0-t2jn2.18eb8f7e7ae422e6",
+                "namespace": "hw5",
+                "resourceVersion": "1066",
+                "uid": "5d912d2a-5469-4f78-9b0f-8f67ce0715b1"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-0-t2jn2",
+                "namespace": "hw5",
+                "resourceVersion": "1063",
+                "uid": "a4882d3a-003d-4b92-a1e2-db99795cc569"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-0-t2jn2.18eb8f7e7febfa12",
+                "namespace": "hw5",
+                "resourceVersion": "1082",
+                "uid": "8d1030db-aa0f-491e-9f6d-dffef4e6b436"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-0-t2jn2",
+                "namespace": "hw5",
+                "resourceVersion": "1063",
+                "uid": "a4882d3a-003d-4b92-a1e2-db99795cc569"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-0-t2jn2.18eb8f7e80ca6bdf",
+                "namespace": "hw5",
+                "resourceVersion": "1086",
+                "uid": "fb2ac4e0-d48d-4180-96c8-52017aa0f01c"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-0-t2jn2",
+                "namespace": "hw5",
+                "resourceVersion": "1063",
+                "uid": "a4882d3a-003d-4b92-a1e2-db99795cc569"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-0-t2jn2.18eb8f7e842dc07e",
+                "namespace": "hw5",
+                "resourceVersion": "1091",
+                "uid": "fb4fac06-4555-4a8b-a664-a2790015f064"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-parallel-1-ljg68",
+                "namespace": "hw5",
+                "resourceVersion": "1062",
+                "uid": "fdf13b63-89d3-494f-8e7c-8ce1a9a5842f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Successfully assigned hw5/skills-parallel-1-ljg68 to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-1-ljg68.18eb8f7e7b0a018f",
+                "namespace": "hw5",
+                "resourceVersion": "1070",
+                "uid": "473a1eef-6320-468c-a8ad-c740c9cd36c0"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-1-ljg68",
+                "namespace": "hw5",
+                "resourceVersion": "1065",
+                "uid": "fdf13b63-89d3-494f-8e7c-8ce1a9a5842f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-1-ljg68.18eb8f7e7faf43eb",
+                "namespace": "hw5",
+                "resourceVersion": "1080",
+                "uid": "3a3b7fbc-9446-43f0-878d-50c41f781384"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-1-ljg68",
+                "namespace": "hw5",
+                "resourceVersion": "1065",
+                "uid": "fdf13b63-89d3-494f-8e7c-8ce1a9a5842f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-1-ljg68.18eb8f7e807c98b2",
+                "namespace": "hw5",
+                "resourceVersion": "1084",
+                "uid": "f7429bd5-fb4e-4b33-8456-5578b1a9d987"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-1-ljg68",
+                "namespace": "hw5",
+                "resourceVersion": "1065",
+                "uid": "fdf13b63-89d3-494f-8e7c-8ce1a9a5842f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-1-ljg68.18eb8f7e83e34476",
+                "namespace": "hw5",
+                "resourceVersion": "1089",
+                "uid": "7d3d787a-7d89-4d33-a033-bfb54bac48a3"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-parallel-2-zh9k5",
+                "namespace": "hw5",
+                "resourceVersion": "1061",
+                "uid": "736afbc9-60cc-4d74-973e-0f356c7983ae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Successfully assigned hw5/skills-parallel-2-zh9k5 to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-2-zh9k5.18eb8f7e7b18b5b8",
+                "namespace": "hw5",
+                "resourceVersion": "1075",
+                "uid": "b91c434f-f7a9-4eae-8dce-ee97cc154ba2"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-2-zh9k5",
+                "namespace": "hw5",
+                "resourceVersion": "1067",
+                "uid": "736afbc9-60cc-4d74-973e-0f356c7983ae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-2-zh9k5.18eb8f7e7fcf020e",
+                "namespace": "hw5",
+                "resourceVersion": "1081",
+                "uid": "f1899c42-d5d7-474c-89b4-f67fe47764c6"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-2-zh9k5",
+                "namespace": "hw5",
+                "resourceVersion": "1067",
+                "uid": "736afbc9-60cc-4d74-973e-0f356c7983ae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-2-zh9k5.18eb8f7e809a7c10",
+                "namespace": "hw5",
+                "resourceVersion": "1085",
+                "uid": "65d5d441-77ab-4409-b325-26d3a8ba5842"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-2-zh9k5",
+                "namespace": "hw5",
+                "resourceVersion": "1067",
+                "uid": "736afbc9-60cc-4d74-973e-0f356c7983ae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-2-zh9k5.18eb8f7e83989b2e",
+                "namespace": "hw5",
+                "resourceVersion": "1088",
+                "uid": "638ed8fe-f798-41ad-a896-3136bf453dc5"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-parallel-3-b4pjw",
+                "namespace": "hw5",
+                "resourceVersion": "1068",
+                "uid": "ccad993e-91e4-4b91-9783-223ee29f3bb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Successfully assigned hw5/skills-parallel-3-b4pjw to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-3-b4pjw.18eb8f7e7b49c162",
+                "namespace": "hw5",
+                "resourceVersion": "1076",
+                "uid": "266165a2-6974-4f88-ae1c-299069295ad6"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-3-b4pjw",
+                "namespace": "hw5",
+                "resourceVersion": "1071",
+                "uid": "ccad993e-91e4-4b91-9783-223ee29f3bb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-3-b4pjw.18eb8f7e8000fdf4",
+                "namespace": "hw5",
+                "resourceVersion": "1083",
+                "uid": "8800159f-a5ee-46f3-8c64-a68840061e73"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-3-b4pjw",
+                "namespace": "hw5",
+                "resourceVersion": "1071",
+                "uid": "ccad993e-91e4-4b91-9783-223ee29f3bb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-3-b4pjw.18eb8f7e80efe1b7",
+                "namespace": "hw5",
+                "resourceVersion": "1087",
+                "uid": "a0ce4f17-bb5e-4d8a-8379-19123b8b8e5b"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-parallel-3-b4pjw",
+                "namespace": "hw5",
+                "resourceVersion": "1071",
+                "uid": "ccad993e-91e4-4b91-9783-223ee29f3bb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel-3-b4pjw.18eb8f7e842cd866",
+                "namespace": "hw5",
+                "resourceVersion": "1090",
+                "uid": "75d2757c-a9e0-4c07-8798-954529a419ad"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-parallel",
+                "namespace": "hw5",
+                "resourceVersion": "1058",
+                "uid": "930c849a-e6cc-4438-8fa1-76d67120b9d6"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created pod: skills-parallel-0-t2jn2",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel.18eb8f7e7ab8628a",
+                "namespace": "hw5",
+                "resourceVersion": "1060",
+                "uid": "d931609e-fdc2-44f0-9047-f61799fb0e90"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-parallel",
+                "namespace": "hw5",
+                "resourceVersion": "1058",
+                "uid": "930c849a-e6cc-4438-8fa1-76d67120b9d6"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created pod: skills-parallel-2-zh9k5",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel.18eb8f7e7ae5d166",
+                "namespace": "hw5",
+                "resourceVersion": "1064",
+                "uid": "90ce3d7f-dc9a-4f86-ad07-d3c40f59beeb"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-parallel",
+                "namespace": "hw5",
+                "resourceVersion": "1058",
+                "uid": "930c849a-e6cc-4438-8fa1-76d67120b9d6"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created pod: skills-parallel-1-ljg68",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel.18eb8f7e7ae62756",
+                "namespace": "hw5",
+                "resourceVersion": "1069",
+                "uid": "c930a513-06eb-4311-bf7b-d1f3006fc7f7"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-parallel",
+                "namespace": "hw5",
+                "resourceVersion": "1058",
+                "uid": "930c849a-e6cc-4438-8fa1-76d67120b9d6"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Created pod: skills-parallel-3-b4pjw",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-parallel.18eb8f7e7b1934ff",
+                "namespace": "hw5",
+                "resourceVersion": "1073",
+                "uid": "aed247fd-78af-441c-b9fc-03c4ca53adea"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:54Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-parallel",
+                "namespace": "hw5",
+                "resourceVersion": "1113",
+                "uid": "930c849a-e6cc-4438-8fa1-76d67120b9d6"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:54Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:54Z",
+                "name": "skills-parallel.18eb8f7f828ddf51",
+                "namespace": "hw5",
+                "resourceVersion": "1119",
+                "uid": "cc92b0e1-32ba-4548-a921-7b0f04ebe307"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:11Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-profile-0-92p6v",
+                "namespace": "hw5",
+                "resourceVersion": "914",
+                "uid": "95ea5b09-6874-4d42-9501-6ca8eb59ce22"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:11Z",
+            "message": "Successfully assigned hw5/skills-profile-0-92p6v to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:11Z",
+                "name": "skills-profile-0-92p6v.18eb8f75a03bb40f",
+                "namespace": "hw5",
+                "resourceVersion": "918",
+                "uid": "ba2320a7-b6da-41f6-b6a9-cb71dcf1a018"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:11Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-0-92p6v",
+                "namespace": "hw5",
+                "resourceVersion": "915",
+                "uid": "95ea5b09-6874-4d42-9501-6ca8eb59ce22"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:11Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:11Z",
+                "name": "skills-profile-0-92p6v.18eb8f75a422a151",
+                "namespace": "hw5",
+                "resourceVersion": "920",
+                "uid": "49dafd42-e21b-4750-b402-869afdae812b"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:11Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-0-92p6v",
+                "namespace": "hw5",
+                "resourceVersion": "915",
+                "uid": "95ea5b09-6874-4d42-9501-6ca8eb59ce22"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:11Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:11Z",
+                "name": "skills-profile-0-92p6v.18eb8f75a4a8f992",
+                "namespace": "hw5",
+                "resourceVersion": "921",
+                "uid": "2c99e448-fb9b-4f1f-8cea-8c75c22b54df"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:11Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-0-92p6v",
+                "namespace": "hw5",
+                "resourceVersion": "915",
+                "uid": "95ea5b09-6874-4d42-9501-6ca8eb59ce22"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:11Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:11Z",
+                "name": "skills-profile-0-92p6v.18eb8f75a7768b53",
+                "namespace": "hw5",
+                "resourceVersion": "922",
+                "uid": "c572245e-71a1-4510-bb7e-09e6f16e0c18"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:11Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-profile-0",
+                "namespace": "hw5",
+                "resourceVersion": "913",
+                "uid": "d8aa1813-8aa3-4efe-8378-d715bcaac697"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:11Z",
+            "message": "Created pod: skills-profile-0-92p6v",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:11Z",
+                "name": "skills-profile-0.18eb8f75a0157ae7",
+                "namespace": "hw5",
+                "resourceVersion": "917",
+                "uid": "83a27cbb-5b10-4279-adc6-ea2d699aa950"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:19Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-profile-0",
+                "namespace": "hw5",
+                "resourceVersion": "937",
+                "uid": "d8aa1813-8aa3-4efe-8378-d715bcaac697"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:19Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:19Z",
+                "name": "skills-profile-0.18eb8f775489a30b",
+                "namespace": "hw5",
+                "resourceVersion": "940",
+                "uid": "6c41ef5c-7e5c-4f0d-ad1e-fd3ddf5f37ca"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:19Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-profile-1-qtxvr",
+                "namespace": "hw5",
+                "resourceVersion": "942",
+                "uid": "e06ad116-12b5-4ce2-8ddb-69e4aa5cf526"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:19Z",
+            "message": "Successfully assigned hw5/skills-profile-1-qtxvr to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:19Z",
+                "name": "skills-profile-1-qtxvr.18eb8f7765e405b2",
+                "namespace": "hw5",
+                "resourceVersion": "946",
+                "uid": "afdeb06c-731c-40e3-babc-732b0abb4f96"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:19Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-1-qtxvr",
+                "namespace": "hw5",
+                "resourceVersion": "944",
+                "uid": "e06ad116-12b5-4ce2-8ddb-69e4aa5cf526"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:19Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:19Z",
+                "name": "skills-profile-1-qtxvr.18eb8f77693ae1c5",
+                "namespace": "hw5",
+                "resourceVersion": "948",
+                "uid": "baa4a5cb-8589-4cac-b81d-56fc352dd0a4"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:19Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-1-qtxvr",
+                "namespace": "hw5",
+                "resourceVersion": "944",
+                "uid": "e06ad116-12b5-4ce2-8ddb-69e4aa5cf526"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:19Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:19Z",
+                "name": "skills-profile-1-qtxvr.18eb8f7769a7bf66",
+                "namespace": "hw5",
+                "resourceVersion": "949",
+                "uid": "33589119-742c-42e2-8f67-efbe3af2a28a"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:19Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-1-qtxvr",
+                "namespace": "hw5",
+                "resourceVersion": "944",
+                "uid": "e06ad116-12b5-4ce2-8ddb-69e4aa5cf526"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:19Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:19Z",
+                "name": "skills-profile-1-qtxvr.18eb8f776c6438da",
+                "namespace": "hw5",
+                "resourceVersion": "951",
+                "uid": "b28b11bd-184e-4fcc-a6f2-6ab4fd7e5b86"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:19Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-profile-1",
+                "namespace": "hw5",
+                "resourceVersion": "941",
+                "uid": "85e64a50-9361-4efe-be66-27263b79c385"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:19Z",
+            "message": "Created pod: skills-profile-1-qtxvr",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:19Z",
+                "name": "skills-profile-1.18eb8f7765bb9df2",
+                "namespace": "hw5",
+                "resourceVersion": "943",
+                "uid": "09c8559f-fd48-48ce-8274-5205392794ae"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:26Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-profile-1",
+                "namespace": "hw5",
+                "resourceVersion": "967",
+                "uid": "85e64a50-9361-4efe-be66-27263b79c385"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:26Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:26Z",
+                "name": "skills-profile-1.18eb8f78f6ed1e08",
+                "namespace": "hw5",
+                "resourceVersion": "970",
+                "uid": "d29ddc9f-7f48-4d85-876d-6b6e10a153e8"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:27Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-profile-2-cghqw",
+                "namespace": "hw5",
+                "resourceVersion": "972",
+                "uid": "7ea4ff9b-4726-481a-be29-0631fcd5113b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:27Z",
+            "message": "Successfully assigned hw5/skills-profile-2-cghqw to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:27Z",
+                "name": "skills-profile-2-cghqw.18eb8f792c8c42cc",
+                "namespace": "hw5",
+                "resourceVersion": "976",
+                "uid": "369cf42c-bcfc-4039-a63a-88ac186edabf"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:27Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-2-cghqw",
+                "namespace": "hw5",
+                "resourceVersion": "974",
+                "uid": "7ea4ff9b-4726-481a-be29-0631fcd5113b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:27Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:27Z",
+                "name": "skills-profile-2-cghqw.18eb8f792fc2be9f",
+                "namespace": "hw5",
+                "resourceVersion": "978",
+                "uid": "a005e752-2ff4-449d-b148-a454f1bad536"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:27Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-2-cghqw",
+                "namespace": "hw5",
+                "resourceVersion": "974",
+                "uid": "7ea4ff9b-4726-481a-be29-0631fcd5113b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:27Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:27Z",
+                "name": "skills-profile-2-cghqw.18eb8f7930384948",
+                "namespace": "hw5",
+                "resourceVersion": "979",
+                "uid": "c5c30242-b2a4-4b8d-8cc2-a260f6368b9b"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:27Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-profile-2-cghqw",
+                "namespace": "hw5",
+                "resourceVersion": "974",
+                "uid": "7ea4ff9b-4726-481a-be29-0631fcd5113b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:27Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:27Z",
+                "name": "skills-profile-2-cghqw.18eb8f7932e68c8c",
+                "namespace": "hw5",
+                "resourceVersion": "980",
+                "uid": "a95dd0c0-2d0b-4292-a4e6-5a3f4813b0ea"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:27Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-profile-2",
+                "namespace": "hw5",
+                "resourceVersion": "971",
+                "uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:27Z",
+            "message": "Created pod: skills-profile-2-cghqw",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:27Z",
+                "name": "skills-profile-2.18eb8f792c6b270c",
+                "namespace": "hw5",
+                "resourceVersion": "973",
+                "uid": "72e88e9e-0089-434a-9c5a-d97b6b87e9c3"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:34Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-profile-2",
+                "namespace": "hw5",
+                "resourceVersion": "997",
+                "uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:34Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:34Z",
+                "name": "skills-profile-2.18eb8f7ad5a3d80c",
+                "namespace": "hw5",
+                "resourceVersion": "1000",
+                "uid": "f8909308-5d34-4e9b-bae5-43ab3da5e173"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:55Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-reducer-qf9wn",
+                "namespace": "hw5",
+                "resourceVersion": "1122",
+                "uid": "114421ea-3e92-4c63-91d2-d865350e0efa"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:55Z",
+            "message": "Successfully assigned hw5/skills-reducer-qf9wn to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:55Z",
+                "name": "skills-reducer-qf9wn.18eb8f7fbe2c6bb8",
+                "namespace": "hw5",
+                "resourceVersion": "1126",
+                "uid": "caba6db3-dc73-4431-91a3-fa354f5efae7"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:55Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-reducer-qf9wn",
+                "namespace": "hw5",
+                "resourceVersion": "1125",
+                "uid": "114421ea-3e92-4c63-91d2-d865350e0efa"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:55Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:55Z",
+                "name": "skills-reducer-qf9wn.18eb8f7fd4d92d4c",
+                "namespace": "hw5",
+                "resourceVersion": "1129",
+                "uid": "efd7b3fb-f184-4a5c-a742-c7f78ffdbb11"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:55Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-reducer-qf9wn",
+                "namespace": "hw5",
+                "resourceVersion": "1125",
+                "uid": "114421ea-3e92-4c63-91d2-d865350e0efa"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:55Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:55Z",
+                "name": "skills-reducer-qf9wn.18eb8f7fd552d09f",
+                "namespace": "hw5",
+                "resourceVersion": "1130",
+                "uid": "7fa507bb-d221-47c0-8db7-7c9afbe24231"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:55Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-reducer-qf9wn",
+                "namespace": "hw5",
+                "resourceVersion": "1125",
+                "uid": "114421ea-3e92-4c63-91d2-d865350e0efa"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:55Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:55Z",
+                "name": "skills-reducer-qf9wn.18eb8f7fd7e68b69",
+                "namespace": "hw5",
+                "resourceVersion": "1131",
+                "uid": "c2688d2f-1d23-4124-a6b9-00f5ee0b1c39"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:55Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-reducer",
+                "namespace": "hw5",
+                "resourceVersion": "1121",
+                "uid": "f5e93a86-b79b-4d40-96d5-f16a2cbf209b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:55Z",
+            "message": "Created pod: skills-reducer-qf9wn",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:55Z",
+                "name": "skills-reducer.18eb8f7fbdf66fbc",
+                "namespace": "hw5",
+                "resourceVersion": "1123",
+                "uid": "fb43ada2-be5d-441b-92b5-4e8b540c05a3"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:58Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-reducer",
+                "namespace": "hw5",
+                "resourceVersion": "1137",
+                "uid": "f5e93a86-b79b-4d40-96d5-f16a2cbf209b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:58Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:58Z",
+                "name": "skills-reducer.18eb8f8075c5a4e0",
+                "namespace": "hw5",
+                "resourceVersion": "1140",
+                "uid": "0584d546-b9a2-45fa-ac61-fcbe3c8b0d1d"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "skills-tuned-j5l7w",
+                "namespace": "hw5",
+                "resourceVersion": "1031",
+                "uid": "142e7859-f238-42c2-9fa6-f2a14caaea39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:42Z",
+            "message": "Successfully assigned hw5/skills-tuned-j5l7w to de-hw5-control-plane",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:42Z",
+                "name": "skills-tuned-j5l7w.18eb8f7cb647554f",
+                "namespace": "hw5",
+                "resourceVersion": "1035",
+                "uid": "023592a6-9f1b-4f93-b21c-741a08f09def"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "",
+            "source": {
+                "component": "default-scheduler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-tuned-j5l7w",
+                "namespace": "hw5",
+                "resourceVersion": "1033",
+                "uid": "142e7859-f238-42c2-9fa6-f2a14caaea39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:42Z",
+            "message": "Container image \"de-hw5-skills:1\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:42Z",
+                "name": "skills-tuned-j5l7w.18eb8f7cb97e721b",
+                "namespace": "hw5",
+                "resourceVersion": "1037",
+                "uid": "dc1de1ab-e947-4479-97f0-10336f3177a8"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-tuned-j5l7w",
+                "namespace": "hw5",
+                "resourceVersion": "1033",
+                "uid": "142e7859-f238-42c2-9fa6-f2a14caaea39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:42Z",
+            "message": "Created container: skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:42Z",
+                "name": "skills-tuned-j5l7w.18eb8f7cba0b0a75",
+                "namespace": "hw5",
+                "resourceVersion": "1038",
+                "uid": "2b5a97ef-786f-4a2d-bd45-1a090518fd95"
+            },
+            "reason": "Created",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{skills}",
+                "kind": "Pod",
+                "name": "skills-tuned-j5l7w",
+                "namespace": "hw5",
+                "resourceVersion": "1033",
+                "uid": "142e7859-f238-42c2-9fa6-f2a14caaea39"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:42Z",
+            "message": "Started container skills",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:42Z",
+                "name": "skills-tuned-j5l7w.18eb8f7cbc831a13",
+                "namespace": "hw5",
+                "resourceVersion": "1039",
+                "uid": "44d7f399-1ff5-4d28-a634-ab685d0d8b20"
+            },
+            "reason": "Started",
+            "reportingComponent": "kubelet",
+            "reportingInstance": "de-hw5-control-plane",
+            "source": {
+                "component": "kubelet",
+                "host": "de-hw5-control-plane"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:42Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-tuned",
+                "namespace": "hw5",
+                "resourceVersion": "1030",
+                "uid": "7c26957f-b47d-4bc1-a141-72b2585f33b2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:42Z",
+            "message": "Created pod: skills-tuned-j5l7w",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:42Z",
+                "name": "skills-tuned.18eb8f7cb62be2f1",
+                "namespace": "hw5",
+                "resourceVersion": "1032",
+                "uid": "11954a0c-2c0d-4767-aef1-490adf351cb1"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2026-11-26T09:50:49Z",
+            "involvedObject": {
+                "apiVersion": "batch/v1",
+                "kind": "Job",
+                "name": "skills-tuned",
+                "namespace": "hw5",
+                "resourceVersion": "1053",
+                "uid": "7c26957f-b47d-4bc1-a141-72b2585f33b2"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2026-11-26T09:50:49Z",
+            "message": "Job completed",
+            "metadata": {
+                "creationTimestamp": "2026-11-26T09:50:49Z",
+                "name": "skills-tuned.18eb8f7e561adf12",
+                "namespace": "hw5",
+                "resourceVersion": "1056",
+                "uid": "d9f7918f-232c-447b-a5da-9219a6160553"
+            },
+            "reason": "Completed",
+            "reportingComponent": "job-controller",
+            "reportingInstance": "",
+            "source": {
+                "component": "job-controller"
+            },
+            "type": "Normal"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

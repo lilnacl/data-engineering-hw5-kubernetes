@@ -1,0 +1,6 @@
+persistentvolumeclaim/rustfs-disk1 created
+persistentvolumeclaim/rustfs-disk2 created
+persistentvolumeclaim/rustfs-disk3 created
+persistentvolumeclaim/rustfs-disk4 created
+deployment.apps/rustfs created
+service/rustfs created

@@ -1,0 +1,133 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "creationTimestamp": "2026-11-26T09:50:34Z",
+    "generation": 1,
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13",
+      "batch.kubernetes.io/job-name": "skills-oom",
+      "controller-uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13",
+      "job-name": "skills-oom"
+    },
+    "name": "skills-oom",
+    "namespace": "hw5",
+    "resourceVersion": "1026",
+    "uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13"
+  },
+  "spec": {
+    "activeDeadlineSeconds": 600,
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "creationTimestamp": null,
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13",
+          "batch.kubernetes.io/job-name": "skills-oom",
+          "controller-uid": "ca4aea1c-b252-47ec-a969-354fe1ce9f13",
+          "job-name": "skills-oom"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "args": [
+              "--prefix",
+              "runs/oom"
+            ],
+            "env": [
+              {
+                "name": "S3_ENDPOINT",
+                "value": "http://rustfs.hw5.svc.cluster.local:9000"
+              },
+              {
+                "name": "S3_ACCESS_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "access",
+                    "name": "s3-credentials"
+                  }
+                }
+              },
+              {
+                "name": "S3_SECRET_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "secret",
+                    "name": "s3-credentials"
+                  }
+                }
+              }
+            ],
+            "image": "de-hw5-skills:1",
+            "imagePullPolicy": "Never",
+            "name": "skills",
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "48Mi"
+              },
+              "requests": {
+                "cpu": "250m",
+                "memory": "32Mi"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              },
+              "readOnlyRootFilesystem": true
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30
+      }
+    }
+  },
+  "status": {
+    "conditions": [
+      {
+        "lastProbeTime": "2026-11-26T09:50:41Z",
+        "lastTransitionTime": "2026-11-26T09:50:41Z",
+        "message": "Job has reached the specified backoff limit",
+        "reason": "BackoffLimitExceeded",
+        "status": "True",
+        "type": "FailureTarget"
+      },
+      {
+        "lastProbeTime": "2026-11-26T09:50:41Z",
+        "lastTransitionTime": "2026-11-26T09:50:41Z",
+        "message": "Job has reached the specified backoff limit",
+        "reason": "BackoffLimitExceeded",
+        "status": "True",
+        "type": "Failed"
+      }
+    ],
+    "failed": 1,
+    "ready": 0,
+    "startTime": "2026-11-26T09:50:34Z",
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}

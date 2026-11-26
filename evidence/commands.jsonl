@@ -1,0 +1,150 @@
+{"utc": "2026-11-26T09:50:11Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-profile-0.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:11Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:12Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:13Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:14Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:16Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:17Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:18Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:19Z", "args": ["kubectl", "get", "job", "skills-profile-0", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:19Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-profile-0", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:19Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-profile-0-92p6v"], "returncode": 0}
+{"utc": "2026-11-26T09:50:19Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-profile-0-92p6v"], "returncode": 0}
+{"utc": "2026-11-26T09:50:19Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-profile-1.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:19Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:20Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:21Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:22Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:23Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:24Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:25Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:26Z", "args": ["kubectl", "get", "job", "skills-profile-1", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:26Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-profile-1", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:26Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-profile-1-qtxvr"], "returncode": 0}
+{"utc": "2026-11-26T09:50:26Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-profile-1-qtxvr"], "returncode": 0}
+{"utc": "2026-11-26T09:50:27Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-profile-2.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:27Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:28Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:29Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:30Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:31Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:32Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:33Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:34Z", "args": ["kubectl", "get", "job", "skills-profile-2", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:34Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-profile-2", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:34Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-profile-2-cghqw"], "returncode": 0}
+{"utc": "2026-11-26T09:50:34Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-profile-2-cghqw"], "returncode": 0}
+{"utc": "2026-11-26T09:50:34Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-oom.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:34Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:35Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:36Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:37Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:38Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:39Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:40Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:42Z", "args": ["kubectl", "get", "job", "skills-oom", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:42Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-oom", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:42Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-oom-mw9nn"], "returncode": 0}
+{"utc": "2026-11-26T09:50:42Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-oom-mw9nn"], "returncode": 0}
+{"utc": "2026-11-26T09:50:42Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-tuned.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:42Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:43Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:44Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:45Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:46Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:47Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:48Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:49Z", "args": ["kubectl", "get", "job", "skills-tuned", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:49Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-tuned", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:49Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-tuned-j5l7w"], "returncode": 0}
+{"utc": "2026-11-26T09:50:49Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-tuned-j5l7w"], "returncode": 0}
+{"utc": "2026-11-26T09:50:49Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-parallel.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:49Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-parallel", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:50Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-parallel", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:50Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-parallel", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:50Z", "args": ["kubectl", "get", "job", "skills-parallel", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:51Z", "args": ["kubectl", "get", "job", "skills-parallel", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:52Z", "args": ["kubectl", "get", "job", "skills-parallel", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:53Z", "args": ["kubectl", "get", "job", "skills-parallel", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:54Z", "args": ["kubectl", "get", "job", "skills-parallel", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:54Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-parallel", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:54Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-parallel-0-t2jn2"], "returncode": 0}
+{"utc": "2026-11-26T09:50:54Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-parallel-0-t2jn2"], "returncode": 0}
+{"utc": "2026-11-26T09:50:54Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-parallel-1-ljg68"], "returncode": 0}
+{"utc": "2026-11-26T09:50:54Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-parallel-1-ljg68"], "returncode": 0}
+{"utc": "2026-11-26T09:50:55Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-parallel-2-zh9k5"], "returncode": 0}
+{"utc": "2026-11-26T09:50:55Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-parallel-2-zh9k5"], "returncode": 0}
+{"utc": "2026-11-26T09:50:55Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-parallel-3-b4pjw"], "returncode": 0}
+{"utc": "2026-11-26T09:50:55Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-parallel-3-b4pjw"], "returncode": 0}
+{"utc": "2026-11-26T09:50:55Z", "args": ["kubectl", "create", "configmap", "hw3-baseline", "-n", "hw5", "--from-file=counts_2.json=/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/work/baseline-compact.json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:55Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-reducer.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:55Z", "args": ["kubectl", "get", "job", "skills-reducer", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:56Z", "args": ["kubectl", "get", "job", "skills-reducer", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:57Z", "args": ["kubectl", "get", "job", "skills-reducer", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "get", "job", "skills-reducer", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-reducer", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-reducer-qf9wn"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-reducer-qf9wn"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "apply", "-f", "manifests/priorities.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "get", "nodes", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "get", "pods", "-A", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/cpu-reservation.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:50:58Z", "args": ["kubectl", "get", "pod", "cpu-reservation", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:59Z", "args": ["kubectl", "get", "pod", "cpu-reservation", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:50:59Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-cpu-wait.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:51:00Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-cpu-wait", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:00Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-cpu-wait-6mcbc"], "returncode": 0}
+{"utc": "2026-11-26T09:51:03Z", "args": ["kubectl", "delete", "pod", "cpu-reservation", "-n", "hw5", "--wait=true"], "returncode": 0}
+{"utc": "2026-11-26T09:51:03Z", "args": ["kubectl", "get", "job", "skills-cpu-wait", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:04Z", "args": ["kubectl", "get", "job", "skills-cpu-wait", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:05Z", "args": ["kubectl", "get", "job", "skills-cpu-wait", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:06Z", "args": ["kubectl", "get", "job", "skills-cpu-wait", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:07Z", "args": ["kubectl", "get", "job", "skills-cpu-wait", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:08Z", "args": ["kubectl", "get", "job", "skills-cpu-wait", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "get", "job", "skills-cpu-wait", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-cpu-wait", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-cpu-wait-6mcbc"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-cpu-wait-6mcbc"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "get", "nodes", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "get", "pods", "-A", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-low.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:51:09Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-low", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:10Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-low", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:10Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-low-rh7mj"], "returncode": 0}
+{"utc": "2026-11-26T09:51:10Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/skills-high.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:51:11Z", "args": ["kubectl", "get", "pod", "skills-low-rh7mj", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:11Z", "args": ["kubectl", "get", "events", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:11Z", "args": ["kubectl", "logs", "skills-low-rh7mj", "-n", "hw5"], "returncode": 0}
+{"utc": "2026-11-26T09:51:11Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:12Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:13Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:14Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:15Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:16Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:17Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:18Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:19Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:20Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:21Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:22Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:23Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:24Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:25Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "get", "job", "skills-high", "-n", "hw5", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "get", "pods", "-n", "hw5", "-l", "job-name=skills-high", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "logs", "-n", "hw5", "skills-high-8vssb"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "describe", "pod", "-n", "hw5", "skills-high-8vssb"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "delete", "job", "skills-low", "-n", "hw5", "--wait=true"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "apply", "-f", "manifests/quota.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/quota-first.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/quota-second.yaml"], "returncode": 1}
+{"utc": "2026-11-26T09:51:27Z", "args": ["kubectl", "get", "resourcequota", "compute-budget", "-n", "hw5-quota", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:31Z", "args": ["kubectl", "delete", "pod", "quota-first", "-n", "hw5-quota", "--wait=true"], "returncode": 0}
+{"utc": "2026-11-26T09:51:31Z", "args": ["kubectl", "get", "resourcequota", "compute-budget", "-n", "hw5-quota", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:31Z", "args": ["kubectl", "create", "-f", "/Users/nastavdovina/Documents/Codex/2026-11-26/xa0-x43e-kubernetes-scheduling-kubernetes-yarn/outputs/data-engineering-hw5-kubernetes/manifests/runs/quota-second.yaml"], "returncode": 0}
+{"utc": "2026-11-26T09:51:31Z", "args": ["kubectl", "get", "pod", "quota-second", "-n", "hw5-quota", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:32Z", "args": ["kubectl", "get", "pod", "quota-second", "-n", "hw5-quota", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:32Z", "args": ["kubectl", "get", "resourcequota", "compute-budget", "-n", "hw5-quota", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:32Z", "args": ["kubectl", "get", "pod", "quota-second", "-n", "hw5-quota", "-o", "json"], "returncode": 0}
+{"utc": "2026-11-26T09:51:36Z", "args": ["kubectl", "delete", "pod", "quota-second", "-n", "hw5-quota", "--wait=true"], "returncode": 0}
+{"utc": "2026-11-26T09:51:36Z", "args": ["kubectl", "get", "events", "-A", "-o", "json"], "returncode": 0}

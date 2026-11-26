@@ -1,0 +1,12 @@
+.venv/
+work/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+*.credentials.json
+*secret*.yaml
+!manifests/secret.example.yaml
+report/*.aux
+report/*.log
+report/*.out

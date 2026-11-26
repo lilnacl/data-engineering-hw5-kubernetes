@@ -1,0 +1,2 @@
+# Preserve raw CLI evidence, including kubectl's trailing alignment spaces.
+evidence/** -whitespace

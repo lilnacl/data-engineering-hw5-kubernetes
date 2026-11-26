@@ -1,0 +1,45 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 415B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12.8-slim-bookworm@sha256:2199a62885a12290dc9c5be3ca0681d367576ab7bf037da120e564723292a2f0
+#2 DONE 1.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 104B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 783B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.12.8-slim-bookworm@sha256:2199a62885a12290dc9c5be3ca0681d367576ab7bf037da120e564723292a2f0
+#5 resolve docker.io/library/python:3.12.8-slim-bookworm@sha256:2199a62885a12290dc9c5be3ca0681d367576ab7bf037da120e564723292a2f0 done
+#5 DONE 0.0s
+
+#6 [2/6] WORKDIR /app
+#6 CACHED
+
+#7 [3/6] COPY requirements.txt .
+#7 CACHED
+
+#8 [4/6] RUN pip install --no-cache-dir -r requirements.txt && useradd --uid 10001 --create-home student
+#8 CACHED
+
+#9 [5/6] COPY hw3/ hw3/
+#9 CACHED
+
+#10 [6/6] COPY hw5/ hw5/
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 exporting manifest sha256:55e6f06d36ff3dd1cf3da5cc285365c6cbb85c5d61d93d0e638cc8c373335856 done
+#11 exporting config sha256:b3e4ad83d0b3e804d484c09dd79276c41aefec5c1b48f7f795e5f02aac289dc7 done
+#11 exporting attestation manifest sha256:c57ee8ba8c6a6e493dd4188cb3901c6a80b09c7f45b0f4376ce2d44eaf522ceb done
+#11 exporting manifest list sha256:dbefa4b8f90fdd700a4ceed91661c82419efc777d4c7840f0e80d5fbeffac0fa done
+#11 naming to docker.io/library/de-hw5-skills:1 done
+#11 unpacking to docker.io/library/de-hw5-skills:1 done
+#11 DONE 0.0s

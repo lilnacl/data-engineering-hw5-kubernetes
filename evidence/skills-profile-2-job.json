@@ -1,0 +1,134 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "Job",
+  "metadata": {
+    "creationTimestamp": "2026-11-26T09:50:27Z",
+    "generation": 1,
+    "labels": {
+      "batch.kubernetes.io/controller-uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34",
+      "batch.kubernetes.io/job-name": "skills-profile-2",
+      "controller-uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34",
+      "job-name": "skills-profile-2"
+    },
+    "name": "skills-profile-2",
+    "namespace": "hw5",
+    "resourceVersion": "999",
+    "uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34"
+  },
+  "spec": {
+    "activeDeadlineSeconds": 600,
+    "backoffLimit": 0,
+    "completionMode": "NonIndexed",
+    "completions": 1,
+    "manualSelector": false,
+    "parallelism": 1,
+    "podReplacementPolicy": "TerminatingOrFailed",
+    "selector": {
+      "matchLabels": {
+        "batch.kubernetes.io/controller-uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34"
+      }
+    },
+    "suspend": false,
+    "template": {
+      "metadata": {
+        "creationTimestamp": null,
+        "labels": {
+          "batch.kubernetes.io/controller-uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34",
+          "batch.kubernetes.io/job-name": "skills-profile-2",
+          "controller-uid": "7ef27530-dafc-4a39-98a2-768c4d64aa34",
+          "job-name": "skills-profile-2"
+        }
+      },
+      "spec": {
+        "automountServiceAccountToken": false,
+        "containers": [
+          {
+            "args": [
+              "--prefix",
+              "runs/profile-2"
+            ],
+            "env": [
+              {
+                "name": "S3_ENDPOINT",
+                "value": "http://rustfs.hw5.svc.cluster.local:9000"
+              },
+              {
+                "name": "S3_ACCESS_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "access",
+                    "name": "s3-credentials"
+                  }
+                }
+              },
+              {
+                "name": "S3_SECRET_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "secret",
+                    "name": "s3-credentials"
+                  }
+                }
+              }
+            ],
+            "image": "de-hw5-skills:1",
+            "imagePullPolicy": "Never",
+            "name": "skills",
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "256Mi"
+              },
+              "requests": {
+                "cpu": "250m",
+                "memory": "64Mi"
+              }
+            },
+            "securityContext": {
+              "allowPrivilegeEscalation": false,
+              "capabilities": {
+                "drop": [
+                  "ALL"
+                ]
+              },
+              "readOnlyRootFilesystem": true
+            },
+            "terminationMessagePath": "/dev/termination-log",
+            "terminationMessagePolicy": "File"
+          }
+        ],
+        "dnsPolicy": "ClusterFirst",
+        "restartPolicy": "Never",
+        "schedulerName": "default-scheduler",
+        "securityContext": {},
+        "terminationGracePeriodSeconds": 30
+      }
+    }
+  },
+  "status": {
+    "completionTime": "2026-11-26T09:50:34Z",
+    "conditions": [
+      {
+        "lastProbeTime": "2026-11-26T09:50:34Z",
+        "lastTransitionTime": "2026-11-26T09:50:34Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "SuccessCriteriaMet"
+      },
+      {
+        "lastProbeTime": "2026-11-26T09:50:34Z",
+        "lastTransitionTime": "2026-11-26T09:50:34Z",
+        "message": "Reached expected number of succeeded pods",
+        "reason": "CompletionsReached",
+        "status": "True",
+        "type": "Complete"
+      }
+    ],
+    "ready": 0,
+    "startTime": "2026-11-26T09:50:27Z",
+    "succeeded": 1,
+    "terminating": 0,
+    "uncountedTerminatedPods": {}
+  }
+}
