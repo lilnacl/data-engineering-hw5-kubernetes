@@ -1,0 +1,51 @@
+[
+  {
+    "file": "report/images/01-rustfs-source.png",
+    "application": "RustFS",
+    "url": "http://127.0.0.1:19001/rustfs/console/browser/?bucket=hh-lake&key=raw%2F",
+    "captured_at_utc": "2026-11-26T10:10:36.037931+00:00",
+    "sha256": "617450e8934b376af428217babf48d1b36f6bd7e8d79abc318af6c36cbc2d5f5"
+  },
+  {
+    "file": "report/images/02-rustfs-parts.png",
+    "application": "RustFS",
+    "url": "http://127.0.0.1:19001/rustfs/console/browser/?bucket=hh-lake&key=parts%2F",
+    "captured_at_utc": "2026-11-26T10:11:31.067242+00:00",
+    "sha256": "8de078d1b1f34ce4b98fd692b8116a65d87e99ec847f0b9ff36e94e137459a34"
+  },
+  {
+    "file": "report/images/03-headlamp-oom.png",
+    "application": "Headlamp",
+    "url": "http://127.0.0.1:19002/c/main/pods/hw5/skills-oom-mw9nn",
+    "captured_at_utc": "2026-11-26T10:13:21.083047+00:00",
+    "sha256": "dba71d807ce55a1953edebceede1e4e19d56014cfe34dcf4b2931684d677baef"
+  },
+  {
+    "file": "report/images/04-headlamp-parallel.png",
+    "application": "Headlamp",
+    "url": "http://127.0.0.1:19002/c/main/jobs/hw5/skills-parallel",
+    "captured_at_utc": "2026-11-26T10:14:19.877875+00:00",
+    "sha256": "cbc7ffc62827b2c716686990c71487609961d0d2761921a96646e569f580ce2e"
+  },
+  {
+    "file": "report/images/05-headlamp-workers.png",
+    "application": "Headlamp",
+    "url": "http://127.0.0.1:19002/c/main/jobs/hw5/skills-parallel",
+    "captured_at_utc": "2026-11-26T10:14:33.626407+00:00",
+    "sha256": "2567c43310dcbb5006cc8eb92666effa3fd73ad3c9a6843ec0d3dcac2a35a9d8"
+  },
+  {
+    "file": "report/images/06-headlamp-preemption.png",
+    "application": "Headlamp",
+    "url": "http://127.0.0.1:19002/c/main/",
+    "captured_at_utc": "2026-11-26T10:17:12.795558+00:00",
+    "sha256": "44a55316106dc9453d8268745970af530dbff99392556a19d118f78be6d32339"
+  },
+  {
+    "file": "report/images/07-headlamp-quota.png",
+    "application": "Headlamp",
+    "url": "http://127.0.0.1:19002/c/main/resourcequotas/hw5-quota/compute-budget",
+    "captured_at_utc": "2026-11-26T10:17:40.571196+00:00",
+    "sha256": "ea878eb2438ed0d5dba1e8d074655536a53afc253bc11d6ef5b066a792b3a5dd"
+  }
+]
