@@ -75,6 +75,20 @@ EC 2+2 и четыре каталога-диска. Каждому катало�
 поэтому этот стенд не защищает от отказа физического SSD.
 
 \clearpage
+\section*{Хранилище в консоли RustFS}
+Скриншоты сняла в работающей консоли RustFS после загрузки данных.
+В свойствах исходника виден полный размер файла; в каталоге parts лежат
+четыре части CSV и их манифест.
+\begin{center}
+\includegraphics[width=\linewidth,trim=0 445 0 0,clip]{images/01-rustfs-source.png}
+\par\smallskip{\footnotesize Рис. 1. Свойства исходного CSV: 847\,619\,384 байта.}
+\end{center}
+\begin{center}
+\includegraphics[width=\linewidth]{images/02-rustfs-parts.png}
+\par\smallskip{\footnotesize Рис. 2. Четыре части файла в бакете hh-lake.}
+\end{center}
+
+\clearpage
 \section*{3. Остановка по памяти и выбор предела}
 Для одного и того же расчёта полного файла выполнила три измерения с
 \texttt{requests: cpu=250m, memory=64Mi} и
@@ -124,7 +138,7 @@ L=16\cdot\left\lceil\frac{1.25P}{16}\right\rceil
 Запрос памяти нужен планировщику для размещения; он не задаёт предел
 процессу. Предел памяти контролирует ядро через cgroup, превышение может
 привести к OOM kill. Предел CPU ограничивает время процессора и обычно
-вызывает throttling, а не OOMKilled [1].
+вызывает throttling, а не OOMKilled.
 
 \clearpage
 \section*{4. Параллельный расчёт по частям файла}
@@ -155,7 +169,7 @@ L=16\cdot\left\lceil\frac{1.25P}{16}\right\rceil
 У всех четырёх контейнеров интервалы исполнения пересекаются;
 \texttt{completedIndexes=0-3}. После завершения отдельный Job
 \texttt{skills-reducer} прочитал четыре результата, проверил ровно один
-результат на каждый индекс и сложил частоты одинаковых пар [2].
+результат на каждый индекс и сложил частоты одинаковых пар.
 Повтор работника перезаписывает объект его индекса; reducer не складывает
 результаты разных попыток одного индекса. Из каждой части передаю все
 пары: объединение только локальных топ-10 могло бы потерять глобально
@@ -199,7 +213,7 @@ L=16\cdot\left\lceil\frac{1.25P}{16}\right\rceil
 был назначен и завершил расчёт. UID до и после ожидания совпал.
 Снимки --- \path{evidence/cpu-pending.json} и
 \path{evidence/skills-cpu-wait-pods.json}. Планировщик проверяет сумму
-requests, а не мгновенный фактический расход CPU [3].
+requests, а не мгновенный фактический расход CPU.
 
 \subsection*{Вытеснение задания с низким приоритетом}
 В PriorityClass задала значения 100 для \texttt{hw5-low} и 1000 для
@@ -224,7 +238,7 @@ requests, а не мгновенный фактический расход CPU [
 Остановка по лимиту памяти в разделе 3 произошла внутри cgroup и имеет
 другую причину. Высокий приоритет помогает только тогда, когда удаление
 более низких Pod делает размещение возможным; он не добавляет ресурсов
-узлу и не отменяет квоту [4]. Полные свидетельства ---
+узлу и не отменяет квоту. Полные свидетельства ---
 \path{evidence/preemption-victim.json}, \path{evidence/preemption-events.json}
 и \path{evidence/preemption-summary.json}.
 
@@ -251,7 +265,7 @@ $600+600=1200>1000$ millicpu. API отклонил создание:
 он был принят и перешёл в \texttt{Running}. Сохранила квоту до и после
 освобождения, текст отказа и принятый Pod в \path{evidence/quota-*}.
 Квота ограничивает сумму заявок и пределов namespace; наличие свободного
-CPU на узле не позволяет её обойти [5].
+CPU на узле не позволяет её обойти.
 
 \subsection*{7. Проверка результата и состав репозитория}
 Автотесты проверяют разбиение многострочного CSV, подсчёт пар при прежнем
@@ -289,8 +303,7 @@ CPU на узле не позволяет её обойти [5].
 В лекции YARN рассматривается как централизованная модель выделения
 ресурсов, Mesos --- как двухуровневая. В своём стенде использовала
 стандартный централизованный kube-scheduler. Ниже привела соответствия
-по роли компонентов; полного совпадения объектов между системами нет
-[3, 6--8].
+по роли компонентов; полного совпадения объектов между системами нет.
 
 \begin{center}
 \small
@@ -313,14 +326,14 @@ CPU на узле не позволяет её обойти [5].
 число успешных работников и повторяет сбои, а мой код выбирает часть
 данных и выполняет reduce. Универсального отдельного AM на каждый Job
 Kubernetes не запускает. Job controller не знает семантику пар навыков;
-я запускаю reducer после успешных четырёх индексов [2, 6].
+я запускаю reducer после успешных четырёх индексов.
 
 \textbf{Является ли YARN container Docker-контейнером?}
 Это прежде всего выделение ресурсов и контекст запуска процесса.
 Docker может быть одним из способов исполнения в YARN, но термин
 container сам по себе не означает OCI-образ. В Kubernetes Pod --- единица
 планирования и может содержать несколько контейнеров. Mesos executor
-также не равен Pod: он может обслуживать несколько задач framework [6, 7].
+также не равен Pod: он может обслуживать несколько задач framework.
 
 \textbf{Квота Kubernetes соответствует Capacity Scheduler?}
 Частично: обе политики ограничивают потребление группы приложений.
@@ -328,14 +341,14 @@ container сам по себе не означает OCI-образ. В Kubernet
 она не гарантирует долю физических CPU, не реализует эластичные очереди
 и не обеспечивает DRF. Гарантии ёмкости очередей и заимствование свободной
 доли требуют соответствующего планировщика. Namespace --- область
-объектов и политики, а не выделенная машина [5, 8].
+объектов и политики, а не выделенная машина.
 
 \textbf{Как связаны приоритет и справедливость?}
 PriorityClass позволяет предпочесть важный Pod и вытеснить менее важный,
 как в моём опыте. Это не равное распределение долей между всеми
 приложениями. DRF сравнивает доминирующую долю каждого участника по
 нескольким ресурсам; стандартные PriorityClass и ResourceQuota такую
-политику сами не задают [4, 9].
+политику сами не задают.
 
 \clearpage
 \section*{9. Ответы на вопросы лекции}
@@ -351,14 +364,14 @@ PriorityClass позволяет предпочесть важный Pod и вы
 координирует приложение. В Mesos allocator сначала решает, какому framework
 предложить ресурсы; затем framework scheduler выбирает задачи и ресурсы
 из offer. В обычном Kubernetes готовый Pod попадает к scheduler, который
-сам выбирает узел. Job controller не принимает resource offers [3, 6, 7].
+сам выбирает узел. Job controller не принимает resource offers.
 
 \textbf{Три основные сущности YARN и последовательность запуска.}
 ResourceManager управляет распределением общего пула; NodeManager
 запускает и контролирует процессы на своём узле; ApplicationMaster
 договаривается о ресурсах и координирует одно приложение. Клиент подаёт
 приложение RM; в выделенном контейнере запускается AM; AM запрашивает
-дополнительные контейнеры и обращается к NM для запуска задач [6].
+дополнительные контейнеры и обращается к NM для запуска задач.
 
 \textbf{Что делает Mesos с отклонённым offer?}
 Master предлагает framework список доступных ресурсов на agent;
@@ -366,7 +379,7 @@ framework выбирает задачи и принимает нужную ча�
 Master передаёт принятые задачи agent/executor. Неиспользованные ресурсы
 могут быть предложены другим framework; они не закрепляются за тем,
 кто отказался. Отказ и короткое ожидание подходящего offer можно
-использовать для локальности данных (delay scheduling) [7].
+использовать для локальности данных (delay scheduling).
 
 \textbf{Что будет с коротким запросом за большим заданием при FIFO?}
 Если большой batch занял весь пул, короткий запрос ждёт освобождения
@@ -374,15 +387,14 @@ Master передаёт принятые задачи agent/executor. Неисп
 Capacity Scheduler с отдельной ёмкостью интерактивной очереди и
 вытеснением позволяют выделить ей ресурсы. Одна смена названия
 планировщика без настроек очередей/вытеснения немедленный запуск не
-гарантирует. Аналогию с ожиданием и вытеснением проверила в разделе 5
-[8, 9].
+гарантирует. Аналогию с ожиданием и вытеснением проверила в разделе 5.
 
 \textbf{Как Mesos переживает потерю master и при чём здесь ZooKeeper?}
 В режиме HA один master активный, другие резервные. ZooKeeper
 координирует выбор и обнаружение лидера; после отказа активным становится
 другой master. Уже работающие задачи могут продолжать исполнение, но
 до восстановления master новые ресурсы не выделяются. HA master не
-заменяет восстановление состояния самого framework [10].
+заменяет восстановление состояния самого framework.
 
 \textbf{Как устроены локальность и отказоустойчивость Kubernetes?}
 Размещение можно ограничивать affinity, labels и topology, но scheduler
@@ -391,7 +403,7 @@ Capacity Scheduler с отдельной ёмкостью интерактивн
 Job controller создаёт повторные Pod после сбоев, а сохранность данных
 обеспечивает хранилище. Для HA control plane нужны несколько экземпляров
 управляющих компонентов и устойчивое etcd; мой одноузловой kind этого не
-обеспечивает [2, 11].
+обеспечивает.
 
 \subsection*{Дополнительный пример из лекции}
 Если есть отдельные пулы по 10 машин для MapReduce и Spark, их можно
@@ -399,42 +411,14 @@ Job controller создаёт повторные Pod после сбоев, а �
 50\%. При простое Spark batch временно использует свободную долю; когда
 Spark возвращается, preemption восстанавливает её доступную ёмкость
 по настроенной политике. Файлы можно держать в общем HDFS, а AM двух
-движков согласуют контейнеры с одним RM [6, 8].
+движков согласуют контейнеры с одним RM.
 
 \clearpage
-\section*{Источники и проверка критериев}
-\small
-\begin{enumerate}
-\item Kubernetes. Resource Management for Pods and Containers.\newline
-\url{https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/}
-\item Kubernetes. Jobs.\newline
-\url{https://kubernetes.io/docs/concepts/workloads/controllers/job/}
-\item Kubernetes. Scheduler.\newline
-\url{https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/}
-\item Kubernetes. Pod Priority and Preemption.\newline
-\url{https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/}
-\item Kubernetes. Resource Quotas.\newline
-\url{https://kubernetes.io/docs/concepts/policy/resource-quotas/}
-\item Apache Hadoop. YARN Architecture и Writing YARN Applications.\newline
-\url{https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html}\newline
-\url{https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/WritingYarnApplications.html}
-\item Apache Mesos. Architecture.\newline
-\url{https://mesos.apache.org/documentation/latest/architecture/}
-\item Apache Hadoop. Capacity Scheduler.\newline
-\url{https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html}
-\item Apache Hadoop. Fair Scheduler.\newline
-\url{https://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/FairScheduler.html}
-\item Apache Mesos. High Availability.\newline
-\url{https://mesos.apache.org/documentation/latest/high-availability/}
-\item Kubernetes. Cluster Architecture.\newline
-\url{https://kubernetes.io/docs/concepts/architecture/}
-\end{enumerate}
-Использовала также лекцию 5 «Менеджеры ресурсов YARN и Mesos»
-Константина Хицко (VK Tech) и свои отчёты/код ДЗ2--ДЗ4.
-Документация проверена 26.11.2026. Mesos рассматриваю в контексте лекции:
-официальный сайт сейчас помечает проект как retired.
+\section*{Проверка критериев}
 
-\normalsize
+Состояния заданий и квоты дополнительно посмотрела в Headlamp.
+Интерфейс подключила к кластеру после основных опытов с доступом на чтение.
+
 \begin{center}
 \begin{tabularx}{\linewidth}{p{44mm}X}
 \toprule
@@ -452,5 +436,31 @@ S3 в Kubernetes & RustFS 1.0.1, четыре PVC, внутренний Service,
 Ответы по системам & Разделы 8--9, сравнение ролей и ограничений аналогий \\
 \bottomrule
 \end{tabularx}
+\end{center}
+\begin{center}
+\includegraphics[width=\linewidth]{images/03-headlamp-oom.png}
+\par\smallskip{\footnotesize Рис. 3. В Headlamp сохранённый Pod имеет состояние OOMKilled.}
+\end{center}
+
+\clearpage
+\section*{Параллельный запуск в Headlamp}
+\begin{center}
+\includegraphics[width=\linewidth]{images/04-headlamp-parallel.png}
+\par\smallskip{\footnotesize Рис. 4. Indexed Job завершён: Complete, 4/4, parallelism=4.}
+\end{center}
+\begin{center}
+\includegraphics[width=\linewidth]{images/05-headlamp-workers.png}
+\par\smallskip{\footnotesize Рис. 5. Все четыре работника с индексами 0--3 завершились: Completed.}
+\end{center}
+
+\clearpage
+\section*{Вытеснение и квота в Headlamp}
+\begin{center}
+\includegraphics[width=\linewidth]{images/06-headlamp-preemption.png}
+\par\smallskip{\footnotesize Рис. 6. Событие Preempted у низкоприоритетного Pod skills-low.}
+\end{center}
+\begin{center}
+\includegraphics[width=\linewidth]{images/07-headlamp-quota.png}
+\par\smallskip{\footnotesize Рис. 7. Квота compute-budget после освобождения ресурсов: запрос CPU ограничен одним ядром.}
 \end{center}
 \end{document}
