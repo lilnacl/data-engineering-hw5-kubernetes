@@ -10,3 +10,8 @@ __pycache__/
 report/*.aux
 report/*.log
 report/*.out
+
+# Исходники отчёта передаются отдельным архивом Overleaf.
+/report/
+/scripts/build_report.py
+/evidence/screenshots/
